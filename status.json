@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-26 19:56 Europe/Paris",
+  "lastUpdated": "2026-02-26 20:05 Europe/Paris",
   "model": "openai-codex/gpt-5.3-codex",
   "context": "~50%",
   "tokens": {
@@ -23,7 +23,7 @@
       "id": "t2",
       "title": "Validate digital competitor rerun (real-estate only)",
       "owner": "Sub-agent",
-      "status": "in_progress",
+      "status": "done",
       "priority": "high",
       "due": "2026-02-27"
     },
@@ -52,16 +52,11 @@
       "due": "2026-02-26"
     }
   ],
-  "subagents": [
-    {
-      "label": "la-perla-digital-shareofvoice-v2",
-      "status": "running",
-      "task": "Real-estate/hospitality digital competitor intelligence rerun"
-    }
-  ],
+  "subagents": [],
   "notes": [
     "Auto-refresh polls status every 15 seconds.",
     "Views: List, Kanban, Timeline.",
-    "Dashboard is server-side protected on Vercel."
+    "Dashboard is server-side protected on Vercel.",
+    "No active sub-agents right now."
   ]
 }
