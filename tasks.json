@@ -1,0 +1,42 @@
+[
+  {
+    "id": "t1",
+    "title": "Consolidate La Perla competitor intelligence v2",
+    "owner": "Main assistant",
+    "status": "in_progress",
+    "priority": "high",
+    "due": "2026-02-27"
+  },
+  {
+    "id": "t2",
+    "title": "Validate digital competitor rerun (real-estate only)",
+    "owner": "Sub-agent",
+    "status": "done",
+    "priority": "high",
+    "due": "2026-02-27"
+  },
+  {
+    "id": "t3",
+    "title": "Refresh Google Doc and Sheet with validated sections",
+    "owner": "Main assistant",
+    "status": "todo",
+    "priority": "medium",
+    "due": "2026-02-27"
+  },
+  {
+    "id": "t4",
+    "title": "Prepare board-ready one-page summary",
+    "owner": "Main assistant",
+    "status": "todo",
+    "priority": "medium",
+    "due": "2026-02-27"
+  },
+  {
+    "id": "t5",
+    "title": "Deploy and secure operation dashboard",
+    "owner": "Main assistant",
+    "status": "done",
+    "priority": "high",
+    "due": "2026-02-26"
+  }
+]
