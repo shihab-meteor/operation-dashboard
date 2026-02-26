@@ -2,6 +2,7 @@ const fs = require('fs')
 const path = require('path')
 
 const TOKEN = process.env.OPDASH_TOKEN || 'opdash-session-token'
+const STATE_URL = process.env.OPDASH_STATE_URL || 'https://raw.githubusercontent.com/shihab-meteor/operation-dashboard/main/status.json'
 
 function sendFile(res, filePath, contentType) {
   res.setHeader('Content-Type', contentType)
@@ -15,7 +16,23 @@ function getCookie(req, name) {
   return hit ? decodeURIComponent(hit.split('=').slice(1).join('=')) : null
 }
 
-module.exports = (req, res) => {
+async function sendLiveState(res) {
+  try {
+    const url = `${STATE_URL}?t=${Date.now()}`
+    const r = await fetch(url, { cache: 'no-store' })
+    if (!r.ok) throw new Error(`upstream ${r.status}`)
+    const txt = await r.text()
+    res.setHeader('Content-Type', 'application/json; charset=utf-8')
+    res.setHeader('Cache-Control', 'no-store')
+    return res.end(txt)
+  } catch (e) {
+    res.statusCode = 502
+    res.setHeader('Content-Type', 'application/json; charset=utf-8')
+    return res.end(JSON.stringify({ error: 'state_unavailable', message: String(e.message || e) }))
+  }
+}
+
+module.exports = async (req, res) => {
   const urlPath = req.url.split('?')[0]
 
   if (urlPath === '/logout') {
@@ -31,9 +48,8 @@ module.exports = (req, res) => {
     return sendFile(res, loginPath, 'text/html; charset=utf-8')
   }
 
-  if (urlPath === '/status.json') {
-    const statusPath = path.join(__dirname, '..', 'status.json')
-    return sendFile(res, statusPath, 'application/json; charset=utf-8')
+  if (urlPath === '/api/state' || urlPath === '/status.json') {
+    return sendLiveState(res)
   }
 
   const indexPath = path.join(__dirname, '..', 'index.html')

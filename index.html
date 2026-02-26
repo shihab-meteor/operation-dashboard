@@ -217,7 +217,7 @@
 
     async function loadDashboard() {
       try {
-        const r = await fetch('./status.json', { cache: 'no-store' });
+        const r = await fetch('/api/state', { cache: 'no-store' });
         const data = await r.json();
         state.data = data;
         document.getElementById('updated').textContent = `Last sync: ${data.lastUpdated}`;
