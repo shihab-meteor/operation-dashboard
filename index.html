@@ -7,21 +7,40 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen">
-  <div id="app" class="max-w-4xl mx-auto p-4 pb-16">
+  <div class="max-w-5xl mx-auto p-4 pb-24">
     <header class="mb-4">
-      <h1 class="text-2xl font-bold">Operation Dashboard ☄️</h1>
-      <p class="text-sm text-slate-400">Mobile-friendly status board for active work, sub-agents, and codex usage.</p>
-      <p id="updated" class="text-xs text-slate-500 mt-1"></p>
+      <div class="flex items-center justify-between gap-2">
+        <h1 class="text-2xl font-bold">Operation Dashboard ☄️</h1>
+        <div class="flex items-center gap-2">
+          <span id="liveDot" class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+          <span class="text-xs text-slate-400">Live</span>
+        </div>
+      </div>
+      <p class="text-sm text-slate-400">Realtime status for tasks, sub-agents, and codex usage.</p>
+      <div class="flex items-center gap-2 mt-2 text-xs">
+        <button id="refreshBtn" class="px-2 py-1 rounded bg-slate-800 border border-slate-700 hover:bg-slate-700">Refresh now</button>
+        <label class="flex items-center gap-1 text-slate-300"><input id="autoRefresh" type="checkbox" checked> Auto-refresh (15s)</label>
+        <span id="updated" class="text-slate-500"></span>
+      </div>
     </header>
 
-    <section class="grid grid-cols-2 gap-3 mb-4" id="usageCards"></section>
+    <section class="grid grid-cols-2 md:grid-cols-3 gap-3 mb-4" id="usageCards"></section>
 
-    <section class="bg-slate-900 rounded-2xl p-4 mb-4 border border-slate-800">
-      <div class="flex items-center justify-between mb-2">
-        <h2 class="font-semibold">Current Tasks</h2>
-        <span class="text-xs text-slate-400">Tap checkbox to update locally</span>
+    <section class="bg-slate-900 rounded-2xl p-3 mb-4 border border-slate-800">
+      <div class="flex flex-wrap items-center gap-2 justify-between">
+        <div class="flex gap-2">
+          <button data-view="list" class="viewBtn px-3 py-1.5 rounded-lg bg-indigo-600 text-sm">List</button>
+          <button data-view="kanban" class="viewBtn px-3 py-1.5 rounded-lg bg-slate-800 text-sm border border-slate-700">Kanban</button>
+          <button data-view="timeline" class="viewBtn px-3 py-1.5 rounded-lg bg-slate-800 text-sm border border-slate-700">Timeline</button>
+        </div>
+        <input id="search" placeholder="Search tasks..." class="text-sm px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 w-full sm:w-56" />
       </div>
-      <div id="tasks" class="space-y-2"></div>
+    </section>
+
+    <section class="mb-4">
+      <div id="tasksListView" class="bg-slate-900 rounded-2xl p-4 border border-slate-800"></div>
+      <div id="tasksKanbanView" class="hidden"></div>
+      <div id="tasksTimelineView" class="hidden bg-slate-900 rounded-2xl p-4 border border-slate-800"></div>
     </section>
 
     <section class="bg-slate-900 rounded-2xl p-4 mb-4 border border-slate-800">
@@ -36,10 +55,22 @@
   </div>
 
   <script>
-    const saved = localStorage.getItem('opdash_tasks');
-    fetch('./status.json').then(r => r.json()).then(data => {
-      document.getElementById('updated').textContent = `Last sync: ${data.lastUpdated}`;
+    let state = { data: null, view: 'list', timer: null };
 
+    const statusColor = {
+      todo: 'bg-slate-700 text-slate-200',
+      in_progress: 'bg-amber-500/20 text-amber-300',
+      blocked: 'bg-rose-500/20 text-rose-300',
+      done: 'bg-emerald-500/20 text-emerald-300'
+    };
+
+    function badge(text, cls='bg-slate-700 text-slate-200') {
+      return `<span class="text-xs px-2 py-0.5 rounded-full ${cls}">${text}</span>`;
+    }
+
+    function safe(v){ return (v ?? '').toString(); }
+
+    function renderUsage(data) {
       const cards = [
         ['Model', data.model],
         ['Context', data.context],
@@ -49,45 +80,179 @@
         ['Tokens Out', data.tokens.out]
       ];
       const usageEl = document.getElementById('usageCards');
+      usageEl.innerHTML = '';
       cards.forEach(([k,v]) => {
         const d = document.createElement('div');
         d.className = 'bg-slate-900 border border-slate-800 rounded-xl p-3';
         d.innerHTML = `<div class="text-xs text-slate-400">${k}</div><div class="font-semibold text-sm mt-1">${v}</div>`;
         usageEl.appendChild(d);
       });
+    }
 
-      const taskState = saved ? JSON.parse(saved) : data.tasks.map(t => ({...t}));
-      const taskWrap = document.getElementById('tasks');
-      taskState.forEach((t, i) => {
-        const row = document.createElement('label');
-        row.className = 'flex items-start gap-2 bg-slate-800/50 p-2 rounded-lg';
-        row.innerHTML = `<input type="checkbox" ${t.done ? 'checked' : ''} class="mt-1"><div><div class="text-sm font-medium">${t.title}</div><div class="text-xs text-slate-400">${t.owner}</div></div>`;
-        row.querySelector('input').addEventListener('change', (e) => {
-          taskState[i].done = e.target.checked;
-          localStorage.setItem('opdash_tasks', JSON.stringify(taskState));
-        });
-        taskWrap.appendChild(row);
-      });
+    function getFilteredTasks() {
+      const q = document.getElementById('search').value.trim().toLowerCase();
+      const tasks = state.data.tasks || [];
+      return tasks.filter(t => `${t.title} ${t.owner} ${t.status || ''}`.toLowerCase().includes(q));
+    }
 
-      const sa = document.getElementById('subagents');
-      if (!data.subagents.length) {
-        sa.innerHTML = '<div class="text-sm text-slate-400">No active sub-agents right now.</div>';
-      } else {
-        data.subagents.forEach(s => {
-          const d = document.createElement('div');
-          d.className = 'bg-slate-800/50 p-2 rounded-lg text-sm';
-          d.innerHTML = `<div class="font-medium">${s.label} <span class="text-xs text-slate-400">(${s.status})</span></div><div class="text-xs text-slate-400 mt-1">${s.task}</div>`;
-          sa.appendChild(d);
-        });
+    function renderList() {
+      const tasks = getFilteredTasks();
+      const el = document.getElementById('tasksListView');
+      if (!tasks.length) {
+        el.innerHTML = '<div class="text-sm text-slate-400">No tasks match your filter.</div>';
+        return;
       }
+      el.innerHTML = `
+        <div class="flex items-center justify-between mb-2">
+          <h2 class="font-semibold">Tasks (List View)</h2>
+          <span class="text-xs text-slate-400">${tasks.length} tasks</span>
+        </div>
+        <div class="space-y-2">
+          ${tasks.map(t => `
+            <div class="bg-slate-800/50 p-3 rounded-lg border border-slate-700">
+              <div class="flex items-start justify-between gap-2">
+                <div>
+                  <div class="text-sm font-medium">${safe(t.title)}</div>
+                  <div class="text-xs text-slate-400 mt-0.5">${safe(t.owner)}</div>
+                </div>
+                <div class="flex gap-1 items-center">${badge((t.status||'todo').replace('_',' '), statusColor[t.status||'todo'])}${t.priority ? badge(t.priority, 'bg-indigo-500/20 text-indigo-300') : ''}</div>
+              </div>
+              ${t.due ? `<div class="text-xs text-slate-500 mt-2">Due: ${safe(t.due)}</div>` : ''}
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
 
+    function renderKanban() {
+      const tasks = getFilteredTasks();
+      const buckets = { todo: [], in_progress: [], blocked: [], done: [] };
+      tasks.forEach(t => buckets[t.status || (t.done ? 'done' : 'todo')]?.push(t));
+
+      const col = (name, key) => `
+        <div class="bg-slate-900 rounded-2xl p-3 border border-slate-800">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="font-semibold text-sm">${name}</h3>
+            <span class="text-xs text-slate-400">${buckets[key].length}</span>
+          </div>
+          <div class="space-y-2">
+            ${buckets[key].map(t => `
+              <div class="bg-slate-800/60 p-2 rounded-lg border border-slate-700">
+                <div class="text-sm font-medium">${safe(t.title)}</div>
+                <div class="text-xs text-slate-400">${safe(t.owner)}</div>
+                <div class="mt-1">${t.priority ? badge(t.priority, 'bg-indigo-500/20 text-indigo-300') : ''}</div>
+              </div>
+            `).join('') || '<div class="text-xs text-slate-500">No items</div>'}
+          </div>
+        </div>
+      `;
+
+      document.getElementById('tasksKanbanView').innerHTML = `
+        <div class="mb-2 text-sm text-slate-300">Tasks (Kanban View)</div>
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3">
+          ${col('To Do', 'todo')}
+          ${col('In Progress', 'in_progress')}
+          ${col('Blocked', 'blocked')}
+          ${col('Done', 'done')}
+        </div>
+      `;
+    }
+
+    function renderTimeline() {
+      const tasks = [...getFilteredTasks()].sort((a,b) => safe(a.due).localeCompare(safe(b.due)));
+      const el = document.getElementById('tasksTimelineView');
+      if (!tasks.length) {
+        el.innerHTML = '<div class="text-sm text-slate-400">No timeline items.</div>';
+        return;
+      }
+      el.innerHTML = `
+        <h2 class="font-semibold mb-3">Tasks (Timeline View)</h2>
+        <div class="space-y-3">
+          ${tasks.map(t => `
+            <div class="flex gap-3">
+              <div class="mt-1 w-2 h-2 rounded-full ${t.status==='done'?'bg-emerald-400':t.status==='blocked'?'bg-rose-400':t.status==='in_progress'?'bg-amber-300':'bg-slate-500'}"></div>
+              <div class="flex-1 border-l border-slate-700 pl-3 pb-3">
+                <div class="text-xs text-slate-500">${safe(t.due || 'No due date')}</div>
+                <div class="text-sm font-medium">${safe(t.title)}</div>
+                <div class="text-xs text-slate-400">${safe(t.owner)} • ${(t.status || 'todo').replace('_',' ')}</div>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    function renderSubagents(data) {
+      const sa = document.getElementById('subagents');
+      if (!data.subagents?.length) {
+        sa.innerHTML = '<div class="text-sm text-slate-400">No active sub-agents right now.</div>';
+        return;
+      }
+      sa.innerHTML = data.subagents.map(s => `
+        <div class="bg-slate-800/50 p-2 rounded-lg text-sm border border-slate-700">
+          <div class="font-medium">${safe(s.label)} ${badge(safe(s.status), s.status==='running'?'bg-amber-500/20 text-amber-300':'bg-emerald-500/20 text-emerald-300')}</div>
+          <div class="text-xs text-slate-400 mt-1">${safe(s.task)}</div>
+        </div>
+      `).join('');
+    }
+
+    function renderNotes(data) {
       const notes = document.getElementById('notes');
-      data.notes.forEach(n => {
+      notes.innerHTML = '';
+      (data.notes || []).forEach(n => {
         const li = document.createElement('li');
         li.textContent = n;
         notes.appendChild(li);
       });
+    }
+
+    function renderTasks() {
+      document.getElementById('tasksListView').classList.toggle('hidden', state.view !== 'list');
+      document.getElementById('tasksKanbanView').classList.toggle('hidden', state.view !== 'kanban');
+      document.getElementById('tasksTimelineView').classList.toggle('hidden', state.view !== 'timeline');
+      renderList();
+      renderKanban();
+      renderTimeline();
+    }
+
+    async function loadDashboard() {
+      try {
+        const r = await fetch('./status.json', { cache: 'no-store' });
+        const data = await r.json();
+        state.data = data;
+        document.getElementById('updated').textContent = `Last sync: ${data.lastUpdated}`;
+        document.getElementById('liveDot').className = 'w-2.5 h-2.5 rounded-full bg-emerald-400';
+        renderUsage(data);
+        renderSubagents(data);
+        renderNotes(data);
+        renderTasks();
+      } catch (e) {
+        document.getElementById('liveDot').className = 'w-2.5 h-2.5 rounded-full bg-rose-400';
+        document.getElementById('updated').textContent = 'Refresh failed';
+      }
+    }
+
+    function setupRealtime() {
+      if (state.timer) clearInterval(state.timer);
+      if (!document.getElementById('autoRefresh').checked) return;
+      state.timer = setInterval(loadDashboard, 15000);
+    }
+
+    document.getElementById('refreshBtn').addEventListener('click', loadDashboard);
+    document.getElementById('autoRefresh').addEventListener('change', setupRealtime);
+    document.getElementById('search').addEventListener('input', renderTasks);
+
+    document.querySelectorAll('.viewBtn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        state.view = btn.dataset.view;
+        document.querySelectorAll('.viewBtn').forEach(b => b.className = 'viewBtn px-3 py-1.5 rounded-lg bg-slate-800 text-sm border border-slate-700');
+        btn.className = 'viewBtn px-3 py-1.5 rounded-lg bg-indigo-600 text-sm';
+        renderTasks();
+      });
     });
+
+    loadDashboard();
+    setupRealtime();
   </script>
 </body>
 </html>
