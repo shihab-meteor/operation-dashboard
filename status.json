@@ -1,0 +1,27 @@
+{
+  "lastUpdated": "2026-02-26 18:58 Europe/Paris",
+  "model": "openai-codex/gpt-5.3-codex",
+  "context": "132k / 272k (48%)",
+  "tokens": {
+    "in": "129k",
+    "out": "262"
+  },
+  "usage": {
+    "sessionLeft": "99% (4h 52m)",
+    "dayLeft": "92% (6d 18h)"
+  },
+  "tasks": [
+    {"title": "Consolidate thorough La Perla competitor intelligence report", "owner": "Main assistant", "done": false},
+    {"title": "Replace invalid digital competitor run with real-estate-only version", "owner": "Sub-agent", "done": false},
+    {"title": "Update Google Sheet + full Doc with latest validated findings", "owner": "Main assistant", "done": false},
+    {"title": "Prepare board-ready executive summary", "owner": "Main assistant", "done": false}
+  ],
+  "subagents": [
+    {"label": "la-perla-digital-shareofvoice-v2", "status": "running", "task": "Real-estate/hospitality digital competitor intelligence rerun"}
+  ],
+  "notes": [
+    "This dashboard is mobile-first and static-hosted.",
+    "I can refresh status.json whenever you ask and redeploy.",
+    "Task checkbox state is local to your phone browser (localStorage)."
+  ]
+}

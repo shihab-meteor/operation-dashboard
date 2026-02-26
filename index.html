@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Operation Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen">
+  <div class="max-w-4xl mx-auto p-4 pb-16">
+    <header class="mb-4">
+      <h1 class="text-2xl font-bold">Operation Dashboard ☄️</h1>
+      <p class="text-sm text-slate-400">Mobile-friendly status board for active work, sub-agents, and codex usage.</p>
+      <p id="updated" class="text-xs text-slate-500 mt-1"></p>
+    </header>
+
+    <section class="grid grid-cols-2 gap-3 mb-4" id="usageCards"></section>
+
+    <section class="bg-slate-900 rounded-2xl p-4 mb-4 border border-slate-800">
+      <div class="flex items-center justify-between mb-2">
+        <h2 class="font-semibold">Current Tasks</h2>
+        <span class="text-xs text-slate-400">Tap checkbox to update locally</span>
+      </div>
+      <div id="tasks" class="space-y-2"></div>
+    </section>
+
+    <section class="bg-slate-900 rounded-2xl p-4 mb-4 border border-slate-800">
+      <h2 class="font-semibold mb-2">Sub-agent Runs</h2>
+      <div id="subagents" class="space-y-2"></div>
+    </section>
+
+    <section class="bg-slate-900 rounded-2xl p-4 border border-slate-800">
+      <h2 class="font-semibold mb-2">Notes</h2>
+      <ul id="notes" class="list-disc pl-5 text-sm text-slate-300 space-y-1"></ul>
+    </section>
+  </div>
+
+  <script>
+    const saved = localStorage.getItem('opdash_tasks');
+    fetch('./status.json').then(r => r.json()).then(data => {
+      document.getElementById('updated').textContent = `Last sync: ${data.lastUpdated}`;
+
+      const cards = [
+        ['Model', data.model],
+        ['Context', data.context],
+        ['Session Usage Left', data.usage.sessionLeft],
+        ['Daily Usage Left', data.usage.dayLeft],
+        ['Tokens In', data.tokens.in],
+        ['Tokens Out', data.tokens.out]
+      ];
+      const usageEl = document.getElementById('usageCards');
+      cards.forEach(([k,v]) => {
+        const d = document.createElement('div');
+        d.className = 'bg-slate-900 border border-slate-800 rounded-xl p-3';
+        d.innerHTML = `<div class="text-xs text-slate-400">${k}</div><div class="font-semibold text-sm mt-1">${v}</div>`;
+        usageEl.appendChild(d);
+      });
+
+      const taskState = saved ? JSON.parse(saved) : data.tasks.map(t => ({...t}));
+      const taskWrap = document.getElementById('tasks');
+      taskState.forEach((t, i) => {
+        const row = document.createElement('label');
+        row.className = 'flex items-start gap-2 bg-slate-800/50 p-2 rounded-lg';
+        row.innerHTML = `<input type="checkbox" ${t.done ? 'checked' : ''} class="mt-1"><div><div class="text-sm font-medium">${t.title}</div><div class="text-xs text-slate-400">${t.owner}</div></div>`;
+        row.querySelector('input').addEventListener('change', (e) => {
+          taskState[i].done = e.target.checked;
+          localStorage.setItem('opdash_tasks', JSON.stringify(taskState));
+        });
+        taskWrap.appendChild(row);
+      });
+
+      const sa = document.getElementById('subagents');
+      if (!data.subagents.length) {
+        sa.innerHTML = '<div class="text-sm text-slate-400">No active sub-agents right now.</div>';
+      } else {
+        data.subagents.forEach(s => {
+          const d = document.createElement('div');
+          d.className = 'bg-slate-800/50 p-2 rounded-lg text-sm';
+          d.innerHTML = `<div class="font-medium">${s.label} <span class="text-xs text-slate-400">(${s.status})</span></div><div class="text-xs text-slate-400 mt-1">${s.task}</div>`;
+          sa.appendChild(d);
+        });
+      }
+
+      const notes = document.getElementById('notes');
+      data.notes.forEach(n => {
+        const li = document.createElement('li');
+        li.textContent = n;
+        notes.appendChild(li);
+      });
+    });
+  </script>
+</body>
+</html>
