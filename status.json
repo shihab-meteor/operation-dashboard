@@ -50,28 +50,44 @@
       "status": "done",
       "priority": "high",
       "due": "2026-02-26"
+    },
+    {
+      "id": "t6",
+      "title": "Nightly self-improvement research with parallel sub-agents (02:00)",
+      "owner": "Cron + Sub-agents",
+      "status": "in_progress",
+      "priority": "high",
+      "due": "Daily"
+    },
+    {
+      "id": "t7",
+      "title": "Send morning 06:00 executive improvement report",
+      "owner": "Cron",
+      "status": "in_progress",
+      "priority": "high",
+      "due": "Daily 06:00"
     }
   ],
   "subagents": [
     {
       "label": "e227d684-a39c-4a25-9284-9c9fa32cd23f",
       "status": "recent",
-      "task": "updated 839s ago"
+      "task": "updated 852s ago"
     },
     {
       "label": "ec5e3a99-8626-4d9d-a504-f9c23109fc94",
       "status": "recent",
-      "task": "updated 844s ago"
+      "task": "updated 858s ago"
     },
     {
       "label": "7986678e-6fd7-4a88-9a73-0d2ff39a413f",
       "status": "recent",
-      "task": "updated 2632s ago"
+      "task": "updated 2645s ago"
     },
     {
       "label": "fabc9af0-5f40-45dd-8a32-fe38bb6eaa33",
       "status": "recent",
-      "task": "updated 2647s ago"
+      "task": "updated 2660s ago"
     }
   ],
   "notes": [
