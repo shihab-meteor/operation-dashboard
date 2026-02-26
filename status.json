@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-02-26 20:05 Europe/Paris",
+  "lastUpdated": "2026-02-26 20:16 Europe/Paris",
   "model": "openai-codex/gpt-5.3-codex",
-  "context": "~50%",
+  "context": "185139/272000 (68%)",
   "tokens": {
-    "in": "live session",
-    "out": "live session"
+    "in": "7738",
+    "out": "2675"
   },
   "usage": {
-    "sessionLeft": "live",
-    "dayLeft": "live"
+    "sessionLeft": "86861 tokens",
+    "dayLeft": "see OpenClaw session status"
   },
   "tasks": [
     {
@@ -54,9 +54,9 @@
   ],
   "subagents": [],
   "notes": [
+    "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
     "Views: List, Kanban, Timeline.",
-    "Dashboard is server-side protected on Vercel.",
-    "No active sub-agents right now."
+    "Dashboard is server-side protected on Vercel."
   ]
 }
