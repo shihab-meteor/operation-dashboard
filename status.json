@@ -274,7 +274,13 @@
       "notes": "heartbeat_guardrail_check.sh now labels recurring warnings as blocked-frozen and skips forced-unsuppress notifications during active freeze."
     }
   ],
-  "subagents": [],
+  "subagents": [
+    {
+      "label": "dd7358bf-6232-4202-affc-35094456f3be",
+      "status": "recent",
+      "task": "updated 8s ago"
+    }
+  ],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
