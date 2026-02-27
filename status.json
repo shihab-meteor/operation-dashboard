@@ -245,23 +245,27 @@
       "priority": "high",
       "due": "2026-02-27",
       "notes": "heartbeat_guardrail_check.sh now emits HEARTBEAT_STATUS and blocked_fail field in SUMMARY."
+    },
+    {
+      "id": "t28",
+      "title": "Heartbeat status output standardization (STATUS_CODE + JSON line)",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "medium",
+      "due": "2026-02-27",
+      "notes": "heartbeat_guardrail_check.sh now emits HEARTBEAT_STATUS_CODE and HEARTBEAT_STATUS_JSON for compatibility-safe automation."
     }
   ],
   "subagents": [
     {
       "label": "d4b318f9-7b3c-40d2-9f85-fb0cc856aa49",
       "status": "recent",
-      "task": "updated 15s ago"
+      "task": "updated 53s ago"
     },
     {
       "label": "5d52bfff-12de-49aa-b10b-54cbf554537d",
       "status": "recent",
-      "task": "updated 15s ago"
-    },
-    {
-      "label": "7e5d22bc-bc76-49ee-9fae-de87aa1449bc",
-      "status": "recent",
-      "task": "updated 19s ago"
+      "task": "updated 53s ago"
     }
   ],
   "notes": [
