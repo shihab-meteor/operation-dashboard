@@ -238,13 +238,7 @@
       "notes": "heartbeat_guardrail_check.sh now sets fail=1 when BLOCKED_REMEDIATION_BREACH severity is high/critical."
     }
   ],
-  "subagents": [
-    {
-      "label": "a29d97a1-20bf-4b81-b418-12751e6f025e",
-      "status": "recent",
-      "task": "updated 3263s ago"
-    }
-  ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
