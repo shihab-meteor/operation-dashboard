@@ -93,7 +93,7 @@
       "status": "in_progress",
       "priority": "high",
       "due": "2026-02-27",
-      "notes": "Heartbeat 08:20: started implementation with script-backed evidence bundle flow."
+      "notes": "Heartbeat 08:22: guardrail script updated with max-silence unsuppress override design support."
     },
     {
       "id": "t11",
@@ -103,25 +103,18 @@
       "priority": "medium",
       "due": "2026-02-27",
       "notes": "Added scripts/channel_remediation_bundle.sh and validated start run with latest symlink."
-    }
-  ],
-  "subagents": [
-    {
-      "label": "d8c54cb4-0cdc-4701-a4b0-b0a2efc762c4",
-      "status": "recent",
-      "task": "updated 39s ago"
     },
     {
-      "label": "642d3bd2-57ab-4c9e-b1e4-bd21f539163b",
-      "status": "recent",
-      "task": "updated 39s ago"
-    },
-    {
-      "label": "070d7b5a-7a5e-4eda-904d-c0597d86661b",
-      "status": "recent",
-      "task": "updated 47s ago"
+      "id": "t12",
+      "title": "Guardrail: max-silence override for suppressed recurring warnings",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "high",
+      "due": "2026-02-27",
+      "notes": "Implemented in scripts/heartbeat_guardrail_check.sh with reason-tagged escalation output."
     }
   ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
