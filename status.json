@@ -195,19 +195,14 @@
   ],
   "subagents": [
     {
-      "label": "80d914bf-3452-4818-97d1-4d0c7edb7ea6",
-      "status": "recent",
-      "task": "updated 3s ago"
-    },
-    {
       "label": "07a49178-5965-4fb1-a4e8-3f1985a637bf",
       "status": "recent",
-      "task": "updated 4s ago"
+      "task": "updated 36s ago"
     },
     {
       "label": "aecb9028-caad-4a84-8532-6dd062461f55",
       "status": "recent",
-      "task": "updated 4s ago"
+      "task": "updated 36s ago"
     }
   ],
   "notes": [
