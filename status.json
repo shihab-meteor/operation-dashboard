@@ -166,18 +166,7 @@
       "notes": "heartbeat_guardrail_check.sh now emits [UNSUPPRESS][FORCED] lines with ts_iso and event_id."
     }
   ],
-  "subagents": [
-    {
-      "label": "5fba1040-8121-4498-adf7-96f58567e42d",
-      "status": "recent",
-      "task": "updated 54s ago"
-    },
-    {
-      "label": "4f8e0b5c-5163-48ca-a41a-6f6465eceb84",
-      "status": "recent",
-      "task": "updated 56s ago"
-    }
-  ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
