@@ -105,7 +105,23 @@
       "notes": "Added scripts/channel_remediation_bundle.sh and validated start run with latest symlink."
     }
   ],
-  "subagents": [],
+  "subagents": [
+    {
+      "label": "d8c54cb4-0cdc-4701-a4b0-b0a2efc762c4",
+      "status": "recent",
+      "task": "updated 1s ago"
+    },
+    {
+      "label": "642d3bd2-57ab-4c9e-b1e4-bd21f539163b",
+      "status": "recent",
+      "task": "updated 2s ago"
+    },
+    {
+      "label": "070d7b5a-7a5e-4eda-904d-c0597d86661b",
+      "status": "recent",
+      "task": "updated 10s ago"
+    }
+  ],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
