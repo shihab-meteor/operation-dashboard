@@ -191,20 +191,18 @@
       "priority": "high",
       "due": "2026-02-27",
       "notes": "heartbeat_guardrail_check.sh now runs operation-dashboard/scripts/check-task-ids.mjs and fails on TASK_ID_VALIDATION_FAILED."
-    }
-  ],
-  "subagents": [
-    {
-      "label": "07a49178-5965-4fb1-a4e8-3f1985a637bf",
-      "status": "recent",
-      "task": "updated 36s ago"
     },
     {
-      "label": "aecb9028-caad-4a84-8532-6dd062461f55",
-      "status": "recent",
-      "task": "updated 36s ago"
+      "id": "t22",
+      "title": "Guardrail metric: blocked remediation age (BLOCKED_REMEDIATION line)",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "medium",
+      "due": "2026-02-27",
+      "notes": "heartbeat_guardrail_check.sh now emits BLOCKED_REMEDIATION run summary when firstSeen age exceeds SLO."
     }
   ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
