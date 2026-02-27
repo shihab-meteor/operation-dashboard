@@ -209,20 +209,18 @@
       "priority": "medium",
       "due": "2026-02-27",
       "notes": "heartbeat_guardrail_check.sh now emits BLOCKED_REMEDIATION_SEVERITY based on maxAgeSec thresholds."
-    }
-  ],
-  "subagents": [
-    {
-      "label": "9a893e17-4b1a-48ed-b62a-05bf70578252",
-      "status": "recent",
-      "task": "updated 43s ago"
     },
     {
-      "label": "009fedca-a1d2-4c59-9430-7e30d3958571",
-      "status": "recent",
-      "task": "updated 44s ago"
+      "id": "t24",
+      "title": "Guardrail action mapping for blocked remediation severity (SLA + next step)",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "medium",
+      "due": "2026-02-27",
+      "notes": "heartbeat_guardrail_check.sh now emits BLOCKED_REMEDIATION_ACTION with severity->SLA->nextStep mapping."
     }
   ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
