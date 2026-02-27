@@ -36,6 +36,22 @@
       "due": "2026-02-27"
     },
     {
+      "id": "t8",
+      "title": "Implement productivity + UX + architecture policy improvements",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "high",
+      "due": "2026-02-27"
+    },
+    {
+      "id": "t9",
+      "title": "Apply enablement-first security mode (high autonomy, minimal critical gates)",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "high",
+      "due": "2026-02-27"
+    },
+    {
       "id": "t4",
       "title": "Prepare board-ready one-page summary",
       "owner": "Main assistant",
@@ -136,42 +152,42 @@
     {
       "label": "5353560c-437b-4aaf-88f0-8daa08936d07",
       "status": "recent",
-      "task": "updated 1554s ago"
+      "task": "updated 1591s ago"
     },
     {
       "label": "50fa7184-54a6-43b8-975e-b704fea6d721",
       "status": "recent",
-      "task": "updated 1555s ago"
+      "task": "updated 1592s ago"
     },
     {
       "label": "9b6521a1-e286-4f35-9a39-8419c1a3cdc4",
       "status": "recent",
-      "task": "updated 1571s ago"
+      "task": "updated 1608s ago"
     },
     {
       "label": "d1772f2f-4e29-4516-909e-8ef220e8e04f",
       "status": "recent",
-      "task": "updated 1577s ago"
+      "task": "updated 1614s ago"
     },
     {
       "label": "b609c91a-af94-48e2-aaa0-fea2d519d82b",
       "status": "recent",
-      "task": "updated 3191s ago"
+      "task": "updated 3229s ago"
     },
     {
       "label": "4293c64a-36bc-475c-a7c4-e599b0cb7786",
       "status": "recent",
-      "task": "updated 3222s ago"
+      "task": "updated 3260s ago"
     },
     {
       "label": "397bd2b4-2107-491c-bd4e-6a40eb7eb5b6",
       "status": "recent",
-      "task": "updated 3231s ago"
+      "task": "updated 3268s ago"
     },
     {
       "label": "144baf5d-4582-47ec-8b64-5a3389b39249",
       "status": "recent",
-      "task": "updated 3244s ago"
+      "task": "updated 3281s ago"
     }
   ],
   "notes": [
