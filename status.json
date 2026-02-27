@@ -220,23 +220,7 @@
       "notes": "heartbeat_guardrail_check.sh now emits BLOCKED_REMEDIATION_ACTION with severity->SLA->nextStep mapping."
     }
   ],
-  "subagents": [
-    {
-      "label": "eade8788-b65a-4ec4-afbc-1ee6ab974fd5",
-      "status": "recent",
-      "task": "updated 26s ago"
-    },
-    {
-      "label": "21b697d2-982a-473d-bb4f-c9326034e592",
-      "status": "recent",
-      "task": "updated 26s ago"
-    },
-    {
-      "label": "f5e2af53-ce38-4042-bf9d-e3956d0a80b0",
-      "status": "recent",
-      "task": "updated 30s ago"
-    }
-  ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
