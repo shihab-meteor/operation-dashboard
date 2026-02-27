@@ -87,7 +87,23 @@
       "notes": "Derived from heartbeat RCA to close detection→remediation gap."
     }
   ],
-  "subagents": [],
+  "subagents": [
+    {
+      "label": "1fd674d4-5e6c-401d-9834-4bb58856acb0",
+      "status": "recent",
+      "task": "updated 19s ago"
+    },
+    {
+      "label": "ef47ee63-0a1c-483e-aef1-68e4b18d817f",
+      "status": "recent",
+      "task": "updated 21s ago"
+    },
+    {
+      "label": "0728b62d-4a22-4618-8c9e-5b594a50ac50",
+      "status": "recent",
+      "task": "updated 24s ago"
+    }
+  ],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
