@@ -81,27 +81,31 @@
       "id": "t9",
       "title": "Implement channel-health auto-triage checklist in dashboard (owner/deadline/evidence + 24h closure KPI)",
       "owner": "Main assistant",
+      "status": "in_progress",
+      "priority": "high",
+      "due": "2026-02-27",
+      "notes": "Heartbeat 07:20: schema drafted for warning ack workflow (owner/follow-up/recurrence/overdue)."
+    },
+    {
+      "id": "t10",
+      "title": "Implement warning acknowledgment UI/state (open/acknowledged/resolved + overdue view)",
+      "owner": "Main assistant",
       "status": "todo",
       "priority": "high",
       "due": "2026-02-27",
-      "notes": "Derived from heartbeat RCA to close detection→remediation gap."
+      "notes": "Use operation-dashboard/channel-warning-ack-schema.json as MVP data contract."
     }
   ],
   "subagents": [
     {
       "label": "1fd674d4-5e6c-401d-9834-4bb58856acb0",
       "status": "recent",
-      "task": "updated 19s ago"
+      "task": "updated 56s ago"
     },
     {
       "label": "ef47ee63-0a1c-483e-aef1-68e4b18d817f",
       "status": "recent",
-      "task": "updated 21s ago"
-    },
-    {
-      "label": "0728b62d-4a22-4618-8c9e-5b594a50ac50",
-      "status": "recent",
-      "task": "updated 24s ago"
+      "task": "updated 59s ago"
     }
   ],
   "notes": [
