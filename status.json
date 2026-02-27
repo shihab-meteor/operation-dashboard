@@ -240,19 +240,14 @@
   ],
   "subagents": [
     {
-      "label": "fdd9f6d4-2318-417c-a430-d819a4845a1c",
+      "label": "c6a7c40e-0945-4b1c-a86c-09e9f2c04e41",
       "status": "recent",
-      "task": "updated 0s ago"
+      "task": "updated 32s ago"
     },
     {
       "label": "6cd9103c-76fc-422a-9221-3f611f832fd7",
       "status": "recent",
-      "task": "updated 0s ago"
-    },
-    {
-      "label": "c6a7c40e-0945-4b1c-a86c-09e9f2c04e41",
-      "status": "recent",
-      "task": "updated 0s ago"
+      "task": "updated 34s ago"
     }
   ],
   "notes": [
