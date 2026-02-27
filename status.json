@@ -146,23 +146,32 @@
       "priority": "medium",
       "due": "2026-02-27",
       "notes": "Added ESCALATION_SUMMARY and [UNSUPPRESS][FORCED] output format in heartbeat_guardrail_check.sh."
+    },
+    {
+      "id": "t15",
+      "title": "Remediation bundle metadata JSON for dashboard ingestion",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "medium",
+      "due": "2026-02-27",
+      "notes": "channel_remediation_bundle.sh now writes/updates meta.json with run fields and artifact paths."
     }
   ],
   "subagents": [
     {
       "label": "b073febb-6abd-46f1-bc3d-48a835958e7b",
       "status": "recent",
-      "task": "updated 3357s ago"
+      "task": "updated 3395s ago"
     },
     {
       "label": "b77d9b0e-89fe-4bb1-a921-b01657109176",
       "status": "recent",
-      "task": "updated 3398s ago"
+      "task": "updated 3436s ago"
     },
     {
       "label": "97dc22ab-1772-4436-9c62-fd6b9d084571",
       "status": "recent",
-      "task": "updated 3404s ago"
+      "task": "updated 3442s ago"
     }
   ],
   "notes": [
