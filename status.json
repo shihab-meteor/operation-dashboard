@@ -96,7 +96,23 @@
       "notes": "Use operation-dashboard/channel-warning-ack-schema.json as MVP data contract."
     }
   ],
-  "subagents": [],
+  "subagents": [
+    {
+      "label": "36722aa9-baed-40a7-94bd-284395d41f84",
+      "status": "recent",
+      "task": "updated 3s ago"
+    },
+    {
+      "label": "9da0d2b0-f1ce-4320-a8a4-0aa554cd5708",
+      "status": "recent",
+      "task": "updated 13s ago"
+    },
+    {
+      "label": "b4f14ff7-5afb-4024-86d3-25ee46297e36",
+      "status": "recent",
+      "task": "updated 15s ago"
+    }
+  ],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
