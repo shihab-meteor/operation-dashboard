@@ -236,20 +236,18 @@
       "priority": "high",
       "due": "2026-02-27",
       "notes": "heartbeat_guardrail_check.sh now sets fail=1 when BLOCKED_REMEDIATION_BREACH severity is high/critical."
-    }
-  ],
-  "subagents": [
-    {
-      "label": "c6a7c40e-0945-4b1c-a86c-09e9f2c04e41",
-      "status": "recent",
-      "task": "updated 32s ago"
     },
     {
-      "label": "6cd9103c-76fc-422a-9221-3f611f832fd7",
-      "status": "recent",
-      "task": "updated 34s ago"
+      "id": "t27",
+      "title": "Machine-readable heartbeat final status code (PASS/FAIL_BLOCKED/FAIL)",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "high",
+      "due": "2026-02-27",
+      "notes": "heartbeat_guardrail_check.sh now emits HEARTBEAT_STATUS and blocked_fail field in SUMMARY."
     }
   ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
