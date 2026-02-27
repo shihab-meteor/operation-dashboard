@@ -164,20 +164,18 @@
       "priority": "medium",
       "due": "2026-02-27",
       "notes": "heartbeat_guardrail_check.sh now emits [UNSUPPRESS][FORCED] lines with ts_iso and event_id."
-    }
-  ],
-  "subagents": [
-    {
-      "label": "a76db775-3645-4ef0-b94f-7361eb4fe51c",
-      "status": "recent",
-      "task": "updated 56s ago"
     },
     {
-      "label": "66fb2c0c-bb00-40bb-8abc-437b56284e66",
-      "status": "recent",
-      "task": "updated 56s ago"
+      "id": "t17",
+      "title": "Guardrail incident grouping fields (run_id + INCIDENT summary)",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "medium",
+      "due": "2026-02-27",
+      "notes": "heartbeat_guardrail_check.sh now emits run_id on escalation lines and INCIDENT summary for dashboard grouping."
     }
   ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
