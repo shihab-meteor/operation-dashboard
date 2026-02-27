@@ -175,7 +175,23 @@
       "notes": "heartbeat_guardrail_check.sh now emits run_id on escalation lines and INCIDENT summary for dashboard grouping."
     }
   ],
-  "subagents": [],
+  "subagents": [
+    {
+      "label": "ff20bc85-4140-40d0-a6ee-7c63efb00d61",
+      "status": "recent",
+      "task": "updated 26s ago"
+    },
+    {
+      "label": "18dfbc8f-e23d-47ec-a38f-7d5a6bfc1823",
+      "status": "recent",
+      "task": "updated 33s ago"
+    },
+    {
+      "label": "af823b38-a0c1-47ea-b1d7-796117dc6d82",
+      "status": "recent",
+      "task": "updated 33s ago"
+    }
+  ],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
