@@ -90,29 +90,22 @@
       "id": "t10",
       "title": "Implement warning acknowledgment UI/state (open/acknowledged/resolved + overdue view)",
       "owner": "Main assistant",
-      "status": "todo",
+      "status": "in_progress",
       "priority": "high",
       "due": "2026-02-27",
-      "notes": "Use operation-dashboard/channel-warning-ack-schema.json as MVP data contract."
-    }
-  ],
-  "subagents": [
-    {
-      "label": "36722aa9-baed-40a7-94bd-284395d41f84",
-      "status": "recent",
-      "task": "updated 41s ago"
+      "notes": "Heartbeat 08:20: started implementation with script-backed evidence bundle flow."
     },
     {
-      "label": "9da0d2b0-f1ce-4320-a8a4-0aa554cd5708",
-      "status": "recent",
-      "task": "updated 51s ago"
-    },
-    {
-      "label": "b4f14ff7-5afb-4024-86d3-25ee46297e36",
-      "status": "recent",
-      "task": "updated 52s ago"
+      "id": "t11",
+      "title": "Adopt remediation artifact bundle script in closure workflow",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "medium",
+      "due": "2026-02-27",
+      "notes": "Added scripts/channel_remediation_bundle.sh and validated start run with latest symlink."
     }
   ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
