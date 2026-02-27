@@ -247,7 +247,23 @@
       "notes": "heartbeat_guardrail_check.sh now emits HEARTBEAT_STATUS and blocked_fail field in SUMMARY."
     }
   ],
-  "subagents": [],
+  "subagents": [
+    {
+      "label": "d4b318f9-7b3c-40d2-9f85-fb0cc856aa49",
+      "status": "recent",
+      "task": "updated 15s ago"
+    },
+    {
+      "label": "5d52bfff-12de-49aa-b10b-54cbf554537d",
+      "status": "recent",
+      "task": "updated 15s ago"
+    },
+    {
+      "label": "7e5d22bc-bc76-49ee-9fae-de87aa1449bc",
+      "status": "recent",
+      "task": "updated 19s ago"
+    }
+  ],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
