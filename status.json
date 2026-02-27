@@ -71,27 +71,37 @@
     {
       "id": "t8",
       "title": "Execute P0 remediation from nightly improvement (Telegram reachability + privacy/mention alignment + verification gate)",
+      "owner": "Main assistant + Salman (manual channel actions)",
+      "status": "in_progress",
+      "priority": "high",
+      "due": "2026-02-27",
+      "notes": "Heartbeat 06:20: closure now requires owner, deadline, and probe evidence to prevent recurrence."
+    },
+    {
+      "id": "t9",
+      "title": "Implement channel-health auto-triage checklist in dashboard (owner/deadline/evidence + 24h closure KPI)",
       "owner": "Main assistant",
       "status": "todo",
       "priority": "high",
-      "due": "2026-02-27"
+      "due": "2026-02-27",
+      "notes": "Derived from heartbeat RCA to close detection→remediation gap."
     }
   ],
   "subagents": [
     {
       "label": "de7f4e5e-ffda-45a2-9d32-c3b13139b055",
       "status": "recent",
-      "task": "updated 8s ago"
+      "task": "updated 45s ago"
     },
     {
       "label": "4389a3f8-89ed-42d9-bf63-1af7fa4ca2e2",
       "status": "recent",
-      "task": "updated 13s ago"
+      "task": "updated 50s ago"
     },
     {
       "label": "eb0494bb-0b4e-4de6-a89e-c90bcbc6bdef",
       "status": "recent",
-      "task": "updated 17s ago"
+      "task": "updated 55s ago"
     }
   ],
   "notes": [
