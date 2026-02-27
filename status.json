@@ -227,13 +227,22 @@
       "priority": "high",
       "due": "2026-02-27",
       "notes": "Added BLOCKED_REMEDIATION_BREACH and ACTION_REQUIRED lines when high/critical severity exceeds SLA."
+    },
+    {
+      "id": "t26",
+      "title": "Guardrail precedence: fail heartbeat on high/critical blocked-remediation SLA breach",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "high",
+      "due": "2026-02-27",
+      "notes": "heartbeat_guardrail_check.sh now sets fail=1 when BLOCKED_REMEDIATION_BREACH severity is high/critical."
     }
   ],
   "subagents": [
     {
       "label": "a29d97a1-20bf-4b81-b418-12751e6f025e",
       "status": "recent",
-      "task": "updated 3188s ago"
+      "task": "updated 3226s ago"
     }
   ],
   "notes": [
