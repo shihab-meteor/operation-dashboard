@@ -184,13 +184,7 @@
       "notes": "Added scripts/validate_dashboard_tasks.py and verified PASS."
     }
   ],
-  "subagents": [
-    {
-      "label": "18dfbc8f-e23d-47ec-a38f-7d5a6bfc1823",
-      "status": "recent",
-      "task": "updated 110s ago"
-    }
-  ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
