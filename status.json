@@ -36,7 +36,7 @@
       "due": "2026-02-27"
     },
     {
-      "id": "t8",
+      "id": "t18",
       "title": "Implement productivity + UX + architecture policy improvements",
       "owner": "Main assistant",
       "status": "done",
@@ -44,7 +44,7 @@
       "due": "2026-02-27"
     },
     {
-      "id": "t9",
+      "id": "t19",
       "title": "Apply enablement-first security mode (high autonomy, minimal critical gates)",
       "owner": "Main assistant",
       "status": "done",
@@ -173,23 +173,27 @@
       "priority": "medium",
       "due": "2026-02-27",
       "notes": "heartbeat_guardrail_check.sh now emits run_id on escalation lines and INCIDENT summary for dashboard grouping."
+    },
+    {
+      "id": "t20",
+      "title": "Dashboard guardrail: validate unique task IDs before sync",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "medium",
+      "due": "2026-02-27",
+      "notes": "Added scripts/validate_dashboard_tasks.py and verified PASS."
     }
   ],
   "subagents": [
     {
-      "label": "ff20bc85-4140-40d0-a6ee-7c63efb00d61",
+      "label": "af823b38-a0c1-47ea-b1d7-796117dc6d82",
       "status": "recent",
-      "task": "updated 26s ago"
+      "task": "updated 36s ago"
     },
     {
       "label": "18dfbc8f-e23d-47ec-a38f-7d5a6bfc1823",
       "status": "recent",
-      "task": "updated 33s ago"
-    },
-    {
-      "label": "af823b38-a0c1-47ea-b1d7-796117dc6d82",
-      "status": "recent",
-      "task": "updated 33s ago"
+      "task": "updated 72s ago"
     }
   ],
   "notes": [
