@@ -77,18 +77,7 @@
       "due": "2026-02-27"
     }
   ],
-  "subagents": [
-    {
-      "label": "b5c2b90f-25d1-423b-a6b2-9ba716ccc1b7",
-      "status": "recent",
-      "task": "updated 21s ago"
-    },
-    {
-      "label": "067f7aa1-9ca8-469e-8e6a-35d5884163d1",
-      "status": "recent",
-      "task": "updated 28s ago"
-    }
-  ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
