@@ -254,6 +254,15 @@
       "priority": "medium",
       "due": "2026-02-27",
       "notes": "heartbeat_guardrail_check.sh now emits HEARTBEAT_STATUS_CODE and HEARTBEAT_STATUS_JSON for compatibility-safe automation."
+    },
+    {
+      "id": "t29",
+      "title": "Freeze recurrence counter growth while blocked remediation is active",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "high",
+      "due": "2026-02-27",
+      "notes": "heartbeat_guardrail_check.sh now persists freezeOnBlocked and emits COUNTER_FREEZE to prevent artificial rc inflation in FAIL_BLOCKED state."
     }
   ],
   "subagents": [],
