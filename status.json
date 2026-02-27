@@ -114,7 +114,18 @@
       "notes": "Implemented in scripts/heartbeat_guardrail_check.sh with reason-tagged escalation output."
     }
   ],
-  "subagents": [],
+  "subagents": [
+    {
+      "label": "dc8165b4-8c0f-4b0c-a90c-449de25ef4bb",
+      "status": "recent",
+      "task": "updated 28s ago"
+    },
+    {
+      "label": "0eea360f-3b35-48e6-bf19-349f079113e3",
+      "status": "recent",
+      "task": "updated 30s ago"
+    }
+  ],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
