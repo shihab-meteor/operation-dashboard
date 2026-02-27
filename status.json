@@ -1,13 +1,13 @@
 {
   "lastUpdated": "2026-02-27 19:27 Europe/Paris",
   "model": "openai-codex/gpt-5.3-codex",
-  "context": "188593/272000 (69%)",
+  "context": "189379/272000 (70%)",
   "tokens": {
-    "in": "186033",
-    "out": "131"
+    "in": "188001",
+    "out": "504"
   },
   "usage": {
-    "sessionLeft": "83407 tokens",
+    "sessionLeft": "82621 tokens",
     "dayLeft": "see OpenClaw session status"
   },
   "tasks": [
@@ -229,7 +229,13 @@
       "notes": "Added BLOCKED_REMEDIATION_BREACH and ACTION_REQUIRED lines when high/critical severity exceeds SLA."
     }
   ],
-  "subagents": [],
+  "subagents": [
+    {
+      "label": "a29d97a1-20bf-4b81-b418-12751e6f025e",
+      "status": "recent",
+      "task": "updated 32s ago"
+    }
+  ],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
