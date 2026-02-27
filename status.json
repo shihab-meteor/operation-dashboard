@@ -157,7 +157,23 @@
       "notes": "channel_remediation_bundle.sh now writes/updates meta.json with run fields and artifact paths."
     }
   ],
-  "subagents": [],
+  "subagents": [
+    {
+      "label": "5fba1040-8121-4498-adf7-96f58567e42d",
+      "status": "recent",
+      "task": "updated 16s ago"
+    },
+    {
+      "label": "4f8e0b5c-5163-48ca-a41a-6f6465eceb84",
+      "status": "recent",
+      "task": "updated 18s ago"
+    },
+    {
+      "label": "b89f86a2-4894-494a-a17b-049dc29863f5",
+      "status": "recent",
+      "task": "updated 22s ago"
+    }
+  ],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
