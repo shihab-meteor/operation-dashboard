@@ -218,6 +218,15 @@
       "priority": "medium",
       "due": "2026-02-27",
       "notes": "heartbeat_guardrail_check.sh now emits BLOCKED_REMEDIATION_ACTION with severity->SLA->nextStep mapping."
+    },
+    {
+      "id": "t25",
+      "title": "Guardrail SLA breach explicitness for blocked remediation",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "high",
+      "due": "2026-02-27",
+      "notes": "Added BLOCKED_REMEDIATION_BREACH and ACTION_REQUIRED lines when high/critical severity exceeds SLA."
     }
   ],
   "subagents": [],
