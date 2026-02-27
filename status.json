@@ -200,25 +200,18 @@
       "priority": "medium",
       "due": "2026-02-27",
       "notes": "heartbeat_guardrail_check.sh now emits BLOCKED_REMEDIATION run summary when firstSeen age exceeds SLO."
-    }
-  ],
-  "subagents": [
-    {
-      "label": "68f09dd4-b52e-468b-b115-a1f9e18cf8a6",
-      "status": "recent",
-      "task": "updated 28s ago"
     },
     {
-      "label": "c55209ba-2085-40e1-8a69-1166f0e2bfdb",
-      "status": "recent",
-      "task": "updated 28s ago"
-    },
-    {
-      "label": "7065a242-56e6-4917-ae79-115a9f2ccf81",
-      "status": "recent",
-      "task": "updated 31s ago"
+      "id": "t23",
+      "title": "Guardrail severity classification for blocked remediation age",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "medium",
+      "due": "2026-02-27",
+      "notes": "heartbeat_guardrail_check.sh now emits BLOCKED_REMEDIATION_SEVERITY based on maxAgeSec thresholds."
     }
   ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
