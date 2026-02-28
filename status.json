@@ -547,18 +547,7 @@
       "notes": "heartbeat_guardrail_check.sh now prints ACTION_HINT checklist for Telegram privacy/groups and WhatsApp linking before rerun."
     }
   ],
-  "subagents": [
-    {
-      "label": "37bd07ee-46b7-4a6d-8f6a-49c16ffad72f",
-      "status": "recent",
-      "task": "updated 43s ago"
-    },
-    {
-      "label": "5b0a84cc-c3e3-4aa6-a60d-2df4acdb0c94",
-      "status": "recent",
-      "task": "updated 56s ago"
-    }
-  ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
