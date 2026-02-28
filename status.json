@@ -389,23 +389,32 @@
       "priority": "high",
       "due": "2026-02-28",
       "notes": "Added operation-dashboard/scripts/check-unblock-action-lock-freshness.mjs and integrated into heartbeat_guardrail_check.sh (owner/dependencies/escalation/updatedAt<=120m)."
+    },
+    {
+      "id": "t44",
+      "title": "Guardrail: require remediation closure artifact path existence in meta freshness check",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "medium",
+      "due": "2026-02-28",
+      "notes": "Enhanced check-remediation-meta-freshness.mjs to require artifacts.closure path and file existence inside workspace."
     }
   ],
   "subagents": [
     {
       "label": "640cd3c5-5bb8-4243-9a18-cd8f9d254166",
       "status": "recent",
-      "task": "updated 2s ago"
+      "task": "updated 34s ago"
     },
     {
       "label": "88e039af-ed9c-494b-a867-5723f2594b4f",
       "status": "recent",
-      "task": "updated 10s ago"
+      "task": "updated 41s ago"
     },
     {
       "label": "4f489141-bd35-47d7-a6eb-601df3583981",
       "status": "recent",
-      "task": "updated 10s ago"
+      "task": "updated 42s ago"
     }
   ],
   "notes": [
