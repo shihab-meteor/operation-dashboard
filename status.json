@@ -436,7 +436,23 @@
       "notes": "Added dependency preflight in heartbeat_guardrail_check.sh for openclaw/node/python3 (+ timeout warning) to fail fast on missing tooling."
     }
   ],
-  "subagents": [],
+  "subagents": [
+    {
+      "label": "960a4a36-a8fa-424a-819e-2a7041de00ea",
+      "status": "recent",
+      "task": "updated 14s ago"
+    },
+    {
+      "label": "070df556-addd-4275-81b0-0e5c919438eb",
+      "status": "recent",
+      "task": "updated 21s ago"
+    },
+    {
+      "label": "95849efc-fc39-4af2-970e-7e698f1ffb82",
+      "status": "recent",
+      "task": "updated 22s ago"
+    }
+  ],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
