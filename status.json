@@ -644,6 +644,15 @@
       "priority": "low",
       "due": "2026-02-28",
       "notes": "heartbeat_guardrail_check.sh now prints BLOCKER_VERIFY_CMD=scripts/verify_blocker_closure.sh for faster operator automation/parsing."
+    },
+    {
+      "id": "t72",
+      "title": "Emit machine-readable blocker key set on FAIL_BLOCKED",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "low",
+      "due": "2026-02-28",
+      "notes": "heartbeat_guardrail_check.sh now emits CHANNEL_BLOCKERS_PRESENT ... line during blocked breach for quick parsing of unresolved blocker keys."
     }
   ],
   "subagents": [],
