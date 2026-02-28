@@ -353,13 +353,22 @@
       "priority": "high",
       "due": "2026-02-28",
       "notes": "Added operation-dashboard/scripts/check-owner-eta-freshness.mjs and integrated into scripts/heartbeat_guardrail_check.sh to fail stale or non-time-bound lock ETA."
+    },
+    {
+      "id": "t40",
+      "title": "Add dashboard waiver lock template + WAIVER_STATUS_JSON output",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "high",
+      "due": "2026-02-28",
+      "notes": "Added operation-dashboard/locks/p0-risk-waiver.json and enhanced heartbeat_guardrail_check.sh waiver evaluation (dashboard-first with 24h cap) plus WAIVER_STATUS_JSON line."
     }
   ],
   "subagents": [
     {
       "label": "518f0231-3e74-48ed-b164-c79b795dc693",
       "status": "recent",
-      "task": "updated 32s ago"
+      "task": "updated 48s ago"
     }
   ],
   "notes": [
