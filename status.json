@@ -477,9 +477,24 @@
   ],
   "subagents": [
     {
+      "label": "449843e0-a6dd-4885-957e-450c78ee7123",
+      "status": "recent",
+      "task": "updated 18s ago"
+    },
+    {
+      "label": "87f8496a-c979-4146-b116-6142ac33ee2f",
+      "status": "recent",
+      "task": "updated 24s ago"
+    },
+    {
+      "label": "bf5a8b67-2082-4c37-a7cf-754726bf0f99",
+      "status": "recent",
+      "task": "updated 24s ago"
+    },
+    {
       "label": "64b975b8-93c4-4157-8418-6073b65a1a24",
       "status": "recent",
-      "task": "updated 1284s ago"
+      "task": "updated 1322s ago"
     }
   ],
   "notes": [
