@@ -272,23 +272,22 @@
       "priority": "medium",
       "due": "2026-02-28",
       "notes": "heartbeat_guardrail_check.sh now labels recurring warnings as blocked-frozen and skips forced-unsuppress notifications during active freeze."
+    },
+    {
+      "id": "t31",
+      "title": "Severity-aware ACTION_REQUIRED escalation target/deadline",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "high",
+      "due": "2026-02-28",
+      "notes": "heartbeat_guardrail_check.sh now uses critical=>incident-commander/300s, high=>oncall-lead/900s."
     }
   ],
   "subagents": [
     {
-      "label": "01b8d71b-0f26-4e09-a62a-d75dffe09cd7",
-      "status": "recent",
-      "task": "updated 47s ago"
-    },
-    {
-      "label": "6e44584c-ea96-45af-a911-c077c4ece84c",
-      "status": "recent",
-      "task": "updated 47s ago"
-    },
-    {
       "label": "dd7358bf-6232-4202-affc-35094456f3be",
       "status": "recent",
-      "task": "updated 2364s ago"
+      "task": "updated 2402s ago"
     }
   ],
   "notes": [
