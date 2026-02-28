@@ -565,13 +565,7 @@
       "notes": "Added operation-dashboard/scripts/check-and-refresh-lock-windows.mjs to auto-refresh owner/unblock locks when warning thresholds are hit, then re-verify freshness."
     }
   ],
-  "subagents": [
-    {
-      "label": "547319bc-bd79-444e-9e6d-e410b948cd65",
-      "status": "recent",
-      "task": "updated 60s ago"
-    }
-  ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
