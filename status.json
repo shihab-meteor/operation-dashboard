@@ -538,7 +538,18 @@
       "notes": "Added operation-dashboard/scripts/set-latest-closure-owner.mjs and used it to set closure owner before finish."
     }
   ],
-  "subagents": [],
+  "subagents": [
+    {
+      "label": "37bd07ee-46b7-4a6d-8f6a-49c16ffad72f",
+      "status": "recent",
+      "task": "updated 10s ago"
+    },
+    {
+      "label": "5b0a84cc-c3e3-4aa6-a60d-2df4acdb0c94",
+      "status": "recent",
+      "task": "updated 10s ago"
+    }
+  ],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
