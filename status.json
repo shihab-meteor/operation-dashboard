@@ -393,19 +393,9 @@
   ],
   "subagents": [
     {
-      "label": "b8f9a08e-b0f9-46cb-adde-9e0a8b9a2586",
-      "status": "recent",
-      "task": "updated 34s ago"
-    },
-    {
-      "label": "0ddbd90f-a50f-47f8-9897-a8170f6f14d0",
-      "status": "recent",
-      "task": "updated 59s ago"
-    },
-    {
       "label": "e3ca3162-8419-44d6-aecd-a762b3f6987e",
       "status": "recent",
-      "task": "updated 66s ago"
+      "task": "updated 11s ago"
     }
   ],
   "notes": [
