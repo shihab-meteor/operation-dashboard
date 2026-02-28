@@ -482,13 +482,22 @@
       "priority": "medium",
       "due": "2026-02-28",
       "notes": "Added check-remediation-meta-expiry-window.mjs and integrated guardrail WARN before hard freshness failure window."
+    },
+    {
+      "id": "t54",
+      "title": "Enforce non-empty closure owner in channel remediation finish",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "high",
+      "due": "2026-02-28",
+      "notes": "Updated scripts/channel_remediation_bundle.sh finish to require real '- Owner:' in closure.md and write owner into meta.json before status=done."
     }
   ],
   "subagents": [
     {
       "label": "64b975b8-93c4-4157-8418-6073b65a1a24",
       "status": "recent",
-      "task": "updated 1434s ago"
+      "task": "updated 1464s ago"
     }
   ],
   "notes": [
