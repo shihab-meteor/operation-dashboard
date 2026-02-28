@@ -74,7 +74,7 @@
       "status": "done",
       "priority": "high",
       "due": "Daily",
-      "notes": "Completed at 02:01 with report artifacts in reports/nightly-improvement-latest.md and reports/nightly-improvement-2026-02-27.md"
+      "notes": "Completed at 02:00 with report artifacts in reports/nightly-improvement-latest.md and reports/nightly-improvement-2026-02-28.md"
     },
     {
       "id": "t7",
@@ -281,20 +281,27 @@
       "priority": "high",
       "due": "2026-02-28",
       "notes": "heartbeat_guardrail_check.sh now uses critical=>incident-commander/300s, high=>oncall-lead/900s."
-    }
-  ],
-  "subagents": [
-    {
-      "label": "e6983f97-425d-4f9f-8d77-5497b7f1d8e6",
-      "status": "recent",
-      "task": "updated 52s ago"
     },
     {
-      "label": "96f6d143-ae93-4a4c-8b9a-43958ccabdda",
-      "status": "recent",
-      "task": "updated 59s ago"
+      "id": "t32",
+      "title": "Implement P0 incident owner/ETA lock + closure verification gate",
+      "owner": "Main assistant",
+      "status": "todo",
+      "priority": "high",
+      "due": "2026-02-28",
+      "notes": "From nightly improvement 2026-02-28: enforce owner/deadline/evidence before PASS recovery."
+    },
+    {
+      "id": "t33",
+      "title": "Run monetization validation pilots (Invoice service + Ops setup package)",
+      "owner": "Main assistant + Salman",
+      "status": "todo",
+      "priority": "medium",
+      "due": "2026-03-07",
+      "notes": "From nightly improvement 2026-02-28: execute 7-14 day validation with defined outreach targets."
     }
   ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
