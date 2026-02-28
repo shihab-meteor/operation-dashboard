@@ -527,6 +527,15 @@
       "priority": "high",
       "due": "2026-02-28",
       "notes": "Added check-closure-owner-line.mjs and integrated fail-fast check into heartbeat_guardrail_check.sh before remediation freshness validation."
+    },
+    {
+      "id": "t59",
+      "title": "Add utility to set latest remediation closure owner quickly",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "medium",
+      "due": "2026-02-28",
+      "notes": "Added operation-dashboard/scripts/set-latest-closure-owner.mjs and used it to set closure owner before finish."
     }
   ],
   "subagents": [],
