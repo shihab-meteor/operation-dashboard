@@ -317,25 +317,18 @@
       "priority": "high",
       "due": "2026-02-28",
       "notes": "heartbeat_guardrail_check.sh emits SESSION_STORE_STATUS_JSON with code/store/count/repair_cmd for actionable automation."
-    }
-  ],
-  "subagents": [
-    {
-      "label": "c2eff2ef-44ec-4fbc-b3cc-3c532c9e9709",
-      "status": "recent",
-      "task": "updated 31s ago"
     },
     {
-      "label": "92f2e5a2-8d46-483f-86d4-cb07e17c6c8d",
-      "status": "recent",
-      "task": "updated 44s ago"
-    },
-    {
-      "label": "f49060c4-6c32-4728-84bb-e9cf587a1677",
-      "status": "recent",
-      "task": "updated 47s ago"
+      "id": "t36",
+      "title": "P0 blocked-incident ownership lock (owner + ETA + evidence path) before PASS recovery",
+      "owner": "Main assistant + Salman (manual closure)",
+      "status": "in_progress",
+      "priority": "high",
+      "due": "2026-02-28",
+      "notes": "Heartbeat 04:24: added strict preflight gate in HEARTBEAT.md and opened explicit ownership-lock task to close recurring FAIL_BLOCKED loop."
     }
   ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
