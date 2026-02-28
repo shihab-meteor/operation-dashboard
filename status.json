@@ -380,23 +380,32 @@
       "priority": "high",
       "due": "2026-02-28",
       "notes": "Added operation-dashboard/scripts/check-remediation-meta-freshness.mjs and integrated into heartbeat_guardrail_check.sh to fail stale/non-actionable latest meta evidence."
+    },
+    {
+      "id": "t43",
+      "title": "Add unblock-action lock freshness guardrail",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "high",
+      "due": "2026-02-28",
+      "notes": "Added operation-dashboard/scripts/check-unblock-action-lock-freshness.mjs and integrated into heartbeat_guardrail_check.sh (owner/dependencies/escalation/updatedAt<=120m)."
     }
   ],
   "subagents": [
     {
       "label": "b8f9a08e-b0f9-46cb-adde-9e0a8b9a2586",
       "status": "recent",
-      "task": "updated 17s ago"
+      "task": "updated 34s ago"
     },
     {
       "label": "0ddbd90f-a50f-47f8-9897-a8170f6f14d0",
       "status": "recent",
-      "task": "updated 43s ago"
+      "task": "updated 59s ago"
     },
     {
       "label": "e3ca3162-8419-44d6-aecd-a762b3f6987e",
       "status": "recent",
-      "task": "updated 50s ago"
+      "task": "updated 66s ago"
     }
   ],
   "notes": [
