@@ -362,23 +362,32 @@
       "priority": "high",
       "due": "2026-02-28",
       "notes": "Added operation-dashboard/locks/p0-risk-waiver.json and enhanced heartbeat_guardrail_check.sh waiver evaluation (dashboard-first with 24h cap) plus WAIVER_STATUS_JSON line."
+    },
+    {
+      "id": "t41",
+      "title": "Add unblock-action lock artifact for blocked remediation execution",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "high",
+      "due": "2026-02-28",
+      "notes": "Added operation-dashboard/locks/unblock-action-lock.json with owner/dependencies/escalation fields and verified with one-command Node check."
     }
   ],
   "subagents": [
     {
-      "label": "7e3e3b3e-4a81-40df-b192-e7fefb30a95a",
+      "label": "a3dd3007-3b59-4fef-a42f-6dda8f76653f",
       "status": "recent",
-      "task": "updated 10s ago"
+      "task": "updated 16s ago"
     },
     {
       "label": "aa50876b-7417-4aa7-afb7-29140f09094b",
       "status": "recent",
-      "task": "updated 24s ago"
+      "task": "updated 36s ago"
     },
     {
-      "label": "a3dd3007-3b59-4fef-a42f-6dda8f76653f",
+      "label": "7e3e3b3e-4a81-40df-b192-e7fefb30a95a",
       "status": "recent",
-      "task": "updated 24s ago"
+      "task": "updated 48s ago"
     }
   ],
   "notes": [
