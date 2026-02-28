@@ -653,6 +653,15 @@
       "priority": "low",
       "due": "2026-02-28",
       "notes": "heartbeat_guardrail_check.sh now emits CHANNEL_BLOCKERS_PRESENT ... line during blocked breach for quick parsing of unresolved blocker keys."
+    },
+    {
+      "id": "t73",
+      "title": "Emit machine-readable blocker count on FAIL_BLOCKED",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "low",
+      "due": "2026-03-01",
+      "notes": "heartbeat_guardrail_check.sh now emits CHANNEL_BLOCKERS_COUNT=<n> when CHANNEL_BLOCKERS_PRESENT is emitted."
     }
   ],
   "subagents": [],
