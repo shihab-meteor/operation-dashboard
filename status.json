@@ -592,18 +592,7 @@
       "notes": "Added refresh-remediation-meta-if-owner-set.mjs and integrated into heartbeat_guardrail_check.sh to refresh stale rem meta when closure owner is valid."
     }
   ],
-  "subagents": [
-    {
-      "label": "bd29abf3-023d-4213-ad25-7699a83afedd",
-      "status": "recent",
-      "task": "updated 13s ago"
-    },
-    {
-      "label": "650b7b63-64bd-44ac-a5bb-3bcdc66e060a",
-      "status": "recent",
-      "task": "updated 95s ago"
-    }
-  ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
