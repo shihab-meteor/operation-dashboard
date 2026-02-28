@@ -373,7 +373,23 @@
       "notes": "Added operation-dashboard/locks/unblock-action-lock.json with owner/dependencies/escalation fields and verified with one-command Node check."
     }
   ],
-  "subagents": [],
+  "subagents": [
+    {
+      "label": "a058c859-d80f-4ce8-bcb2-5a5f49da9c0f",
+      "status": "recent",
+      "task": "updated 8s ago"
+    },
+    {
+      "label": "b325a406-becc-4214-8d29-103365287e70",
+      "status": "recent",
+      "task": "updated 19s ago"
+    },
+    {
+      "label": "41a8d911-efb9-40a4-94b9-1ec3648f47f9",
+      "status": "recent",
+      "task": "updated 19s ago"
+    }
+  ],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
