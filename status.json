@@ -416,23 +416,32 @@
       "priority": "medium",
       "due": "2026-02-28",
       "notes": "check-remediation-meta-freshness.mjs now fails on summary patterns like test/dummy/sample/placeholder/mock/todo/example."
+    },
+    {
+      "id": "t47",
+      "title": "Guardrail: timeline coherence check for remediation metadata",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "medium",
+      "due": "2026-02-28",
+      "notes": "check-remediation-meta-freshness.mjs now requires valid startedAt, finishedAt>=startedAt, and duration<=24h."
     }
   ],
   "subagents": [
     {
       "label": "7c1c2c1d-78b3-4a65-976f-e8e0fcb3e861",
       "status": "recent",
-      "task": "updated 3s ago"
+      "task": "updated 20s ago"
     },
     {
       "label": "bd1f948a-0c00-4468-a8c4-13a26959ad2c",
       "status": "recent",
-      "task": "updated 3s ago"
+      "task": "updated 30s ago"
     },
     {
       "label": "3d15b2a1-efe7-4c24-a3d4-a6d726f490bf",
       "status": "recent",
-      "task": "updated 3s ago"
+      "task": "updated 37s ago"
     }
   ],
   "notes": [
