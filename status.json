@@ -500,6 +500,15 @@
       "priority": "medium",
       "due": "2026-02-28",
       "notes": "Added check-unblock-lock-expiry-window.mjs and integrated WARN before hard unblock lock freshness failure window."
+    },
+    {
+      "id": "t56",
+      "title": "Add remediation owner-fix command hint in guardrail output",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "medium",
+      "due": "2026-02-28",
+      "notes": "heartbeat_guardrail_check.sh now emits ACTION_HINT with exact closure owner fix command when remediation meta freshness fails."
     }
   ],
   "subagents": [],
