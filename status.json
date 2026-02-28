@@ -583,23 +583,7 @@
       "notes": "heartbeat_guardrail_check.sh now runs check-and-refresh-lock-windows.mjs before core checks to reduce stale lock failures on longer heartbeat intervals."
     }
   ],
-  "subagents": [
-    {
-      "label": "4196ffee-7318-4568-9336-50630f3ae1a2",
-      "status": "recent",
-      "task": "updated 34s ago"
-    },
-    {
-      "label": "fb1c2351-8e23-4aaa-8e8a-7986b1a0f6f6",
-      "status": "recent",
-      "task": "updated 40s ago"
-    },
-    {
-      "label": "4895d39e-ea19-44bc-baaa-7b0c4ac62c7b",
-      "status": "recent",
-      "task": "updated 50s ago"
-    }
-  ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
