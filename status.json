@@ -603,19 +603,14 @@
   ],
   "subagents": [
     {
-      "label": "ea277c05-c12c-4e14-9eb4-dda7b56f2657",
-      "status": "recent",
-      "task": "updated 42s ago"
-    },
-    {
       "label": "8b23cb2c-3cce-415f-9a75-f457635ae8fe",
       "status": "recent",
-      "task": "updated 53s ago"
+      "task": "updated 84s ago"
     },
     {
       "label": "70e425ce-5d82-4960-8f40-ecf2dc871708",
       "status": "recent",
-      "task": "updated 53s ago"
+      "task": "updated 84s ago"
     }
   ],
   "notes": [
