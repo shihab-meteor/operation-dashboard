@@ -301,7 +301,23 @@
       "notes": "From nightly improvement 2026-02-28: execute 7-14 day validation with defined outreach targets."
     }
   ],
-  "subagents": [],
+  "subagents": [
+    {
+      "label": "0e9a02dd-3517-44b9-9a4a-0090a9d8c655",
+      "status": "recent",
+      "task": "updated 16s ago"
+    },
+    {
+      "label": "95828b41-73e9-4f5c-ab25-81eeb5817616",
+      "status": "recent",
+      "task": "updated 16s ago"
+    },
+    {
+      "label": "2cd5503a-6f79-49a4-87c2-d0916d6a4761",
+      "status": "recent",
+      "task": "updated 19s ago"
+    }
+  ],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
