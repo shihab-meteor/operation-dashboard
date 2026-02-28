@@ -355,13 +355,7 @@
       "notes": "Added operation-dashboard/scripts/check-owner-eta-freshness.mjs and integrated into scripts/heartbeat_guardrail_check.sh to fail stale or non-time-bound lock ETA."
     }
   ],
-  "subagents": [
-    {
-      "label": "7702cab6-8647-4282-bfff-0af647342216",
-      "status": "recent",
-      "task": "updated 24s ago"
-    }
-  ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
