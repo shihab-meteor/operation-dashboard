@@ -400,23 +400,7 @@
       "notes": "Enhanced check-remediation-meta-freshness.mjs to require artifacts.closure path and file existence inside workspace."
     }
   ],
-  "subagents": [
-    {
-      "label": "640cd3c5-5bb8-4243-9a18-cd8f9d254166",
-      "status": "recent",
-      "task": "updated 40s ago"
-    },
-    {
-      "label": "88e039af-ed9c-494b-a867-5723f2594b4f",
-      "status": "recent",
-      "task": "updated 48s ago"
-    },
-    {
-      "label": "4f489141-bd35-47d7-a6eb-601df3583981",
-      "status": "recent",
-      "task": "updated 48s ago"
-    }
-  ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
