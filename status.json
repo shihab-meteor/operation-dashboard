@@ -608,23 +608,32 @@
       "priority": "medium",
       "due": "2026-02-28",
       "notes": "Created operation-dashboard/checklists/session-store-remediation.md with dry-run/apply/recheck flow for missing transcript warnings."
+    },
+    {
+      "id": "t68",
+      "title": "Promote fast one-command blocker verifier in closure checklist",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "low",
+      "due": "2026-02-28",
+      "notes": "Added quick verifier section to operation-dashboard/checklists/channel-blocker-closure.md using verify-channel-blocker-closure.mjs and explicit success criteria."
     }
   ],
   "subagents": [
     {
-      "label": "ae060772-3929-4f7d-8361-4c25f1927435",
-      "status": "recent",
-      "task": "updated 7s ago"
-    },
-    {
       "label": "0ba57dc5-f351-4ca5-a73d-4df55e4546ee",
       "status": "recent",
-      "task": "updated 7s ago"
+      "task": "updated 33s ago"
+    },
+    {
+      "label": "ae060772-3929-4f7d-8361-4c25f1927435",
+      "status": "recent",
+      "task": "updated 43s ago"
     },
     {
       "label": "d38426f1-501b-4bb0-8d6e-3d9aeffd1242",
       "status": "recent",
-      "task": "updated 7s ago"
+      "task": "updated 44s ago"
     }
   ],
   "notes": [
