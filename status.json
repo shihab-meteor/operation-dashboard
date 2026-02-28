@@ -15,9 +15,10 @@
       "id": "t1",
       "title": "Consolidate La Perla competitor intelligence v2",
       "owner": "Main assistant",
-      "status": "in_progress",
+      "status": "done",
       "priority": "high",
-      "due": "2026-02-27"
+      "due": "2026-02-27",
+      "notes": "Closed by user: no further La Perla consolidation needed now."
     },
     {
       "id": "t2",
@@ -31,9 +32,10 @@
       "id": "t3",
       "title": "Refresh Google Doc and Sheet with validated sections",
       "owner": "Main assistant",
-      "status": "todo",
+      "status": "done",
       "priority": "medium",
-      "due": "2026-02-27"
+      "due": "2026-02-27",
+      "notes": "Closed by user: no further La Perla doc/sheet refresh required now."
     },
     {
       "id": "t18",
@@ -55,9 +57,10 @@
       "id": "t4",
       "title": "Prepare board-ready one-page summary",
       "owner": "Main assistant",
-      "status": "todo",
+      "status": "done",
       "priority": "medium",
-      "due": "2026-02-27"
+      "due": "2026-02-27",
+      "notes": "Closed by user: board one-pager deferred/closed."
     },
     {
       "id": "t5",
@@ -88,28 +91,28 @@
       "id": "t8",
       "title": "Execute P0 remediation from nightly improvement (Telegram reachability + privacy/mention alignment + verification gate)",
       "owner": "Main assistant + Salman (manual channel actions)",
-      "status": "in_progress",
+      "status": "done",
       "priority": "high",
       "due": "2026-02-27",
-      "notes": "Heartbeat 06:20: closure now requires owner, deadline, and probe evidence to prevent recurrence."
+      "notes": "Heartbeat 06:20: closure now requires owner, deadline, and probe evidence to prevent recurrence. Closed by user: Telegram issue considered resolved."
     },
     {
       "id": "t9",
       "title": "Implement channel-health auto-triage checklist in dashboard (owner/deadline/evidence + 24h closure KPI)",
       "owner": "Main assistant",
-      "status": "in_progress",
+      "status": "done",
       "priority": "high",
       "due": "2026-02-27",
-      "notes": "Heartbeat 07:20: schema drafted for warning ack workflow (owner/follow-up/recurrence/overdue)."
+      "notes": "Heartbeat 07:20: schema drafted for warning ack workflow (owner/follow-up/recurrence/overdue). Closed by user: channel-health triage enhancement deferred."
     },
     {
       "id": "t10",
       "title": "Implement warning acknowledgment UI/state (open/acknowledged/resolved + overdue view)",
       "owner": "Main assistant",
-      "status": "in_progress",
+      "status": "done",
       "priority": "high",
       "due": "2026-02-27",
-      "notes": "Heartbeat 08:22: guardrail script updated with max-silence unsuppress override design support."
+      "notes": "Heartbeat 08:22: guardrail script updated with max-silence unsuppress override design support. Closed by user: warning acknowledgment UI deferred."
     },
     {
       "id": "t11",
@@ -286,10 +289,10 @@
       "id": "t32",
       "title": "Implement P0 incident owner/ETA lock + closure verification gate",
       "owner": "Main assistant",
-      "status": "todo",
+      "status": "done",
       "priority": "high",
       "due": "2026-02-28",
-      "notes": "From nightly improvement 2026-02-28: enforce owner/deadline/evidence before PASS recovery."
+      "notes": "From nightly improvement 2026-02-28: enforce owner/deadline/evidence before PASS recovery. Closed by user: P0 incident lock rollout deferred."
     },
     {
       "id": "t33",
@@ -322,10 +325,10 @@
       "id": "t36",
       "title": "P0 blocked-incident ownership lock (owner + ETA + evidence path) before PASS recovery",
       "owner": "Main assistant + Salman (manual closure)",
-      "status": "in_progress",
+      "status": "done",
       "priority": "high",
       "due": "2026-02-28",
-      "notes": "Heartbeat 04:24: added strict preflight gate in HEARTBEAT.md and opened explicit ownership-lock task to close recurring FAIL_BLOCKED loop."
+      "notes": "Heartbeat 04:24: added strict preflight gate in HEARTBEAT.md and opened explicit ownership-lock task to close recurring FAIL_BLOCKED loop. Closed by user: blocked-incident ownership lock no longer priority."
     },
     {
       "id": "t37",
@@ -452,6 +455,15 @@
       "priority": "medium",
       "due": "2026-02-28",
       "notes": "Added operation-dashboard/scripts/refresh-unblock-action-lock.mjs and validated with check-unblock-action-lock-freshness.mjs."
+    },
+    {
+      "id": "t51",
+      "title": "Brave API key automation task",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "low",
+      "due": "2026-02-28",
+      "notes": "Closed by user decision: web_search key not required for current execution path."
     }
   ],
   "subagents": [],
