@@ -326,23 +326,27 @@
       "priority": "high",
       "due": "2026-02-28",
       "notes": "Heartbeat 04:24: added strict preflight gate in HEARTBEAT.md and opened explicit ownership-lock task to close recurring FAIL_BLOCKED loop."
+    },
+    {
+      "id": "t37",
+      "title": "Add machine-readable P0 incident lock file for owner/ETA/evidence gating",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "high",
+      "due": "2026-02-28",
+      "notes": "Added operation-dashboard/p0-blocked-incident-lock.json to enforce closure metadata before PASS recovery."
     }
   ],
   "subagents": [
     {
-      "label": "ed66520d-4094-434f-9e96-f5ef3cd046e7",
+      "label": "4f0daa28-c801-4557-b955-63eac76d1609",
       "status": "recent",
       "task": "updated 27s ago"
     },
     {
       "label": "67c9ad2d-6b7d-464a-ac63-b1c7af504798",
       "status": "recent",
-      "task": "updated 33s ago"
-    },
-    {
-      "label": "4f0daa28-c801-4557-b955-63eac76d1609",
-      "status": "recent",
-      "task": "updated 33s ago"
+      "task": "updated 69s ago"
     }
   ],
   "notes": [
