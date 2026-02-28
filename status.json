@@ -447,19 +447,24 @@
   ],
   "subagents": [
     {
-      "label": "95849efc-fc39-4af2-970e-7e698f1ffb82",
+      "label": "ac68307e-a120-4309-867b-7ca228babbff",
       "status": "recent",
-      "task": "updated 18s ago"
+      "task": "updated 1s ago"
     },
     {
-      "label": "960a4a36-a8fa-424a-819e-2a7041de00ea",
+      "label": "dcfa4df0-8c8b-410f-bfa6-3cf2e17928f7",
       "status": "recent",
-      "task": "updated 52s ago"
+      "task": "updated 1s ago"
+    },
+    {
+      "label": "13240a1c-e663-45fc-924d-75a0b98b65ad",
+      "status": "recent",
+      "task": "updated 1s ago"
     },
     {
       "label": "070df556-addd-4275-81b0-0e5c919438eb",
       "status": "recent",
-      "task": "updated 58s ago"
+      "task": "updated 19s ago"
     }
   ],
   "notes": [
