@@ -407,6 +407,15 @@
       "priority": "medium",
       "due": "2026-02-28",
       "notes": "Enhanced check-remediation-meta-freshness.mjs with drift checks (meta/closure mtime vs finishedAt <=10m) to prevent timestamp spoofing."
+    },
+    {
+      "id": "t46",
+      "title": "Guardrail: reject test-like remediation summary placeholders",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "medium",
+      "due": "2026-02-28",
+      "notes": "check-remediation-meta-freshness.mjs now fails on summary patterns like test/dummy/sample/placeholder/mock/todo/example."
     }
   ],
   "subagents": [
@@ -418,17 +427,12 @@
     {
       "label": "6fdc6981-6263-43d1-a2f3-298af5b139b4",
       "status": "recent",
-      "task": "updated 5s ago"
+      "task": "updated 36s ago"
     },
     {
       "label": "843933fb-7f01-41da-b929-bfec7ef772e3",
       "status": "recent",
-      "task": "updated 5s ago"
-    },
-    {
-      "label": "ba4f4245-b155-4149-8a17-e8ad87488ee0",
-      "status": "recent",
-      "task": "updated 27s ago"
+      "task": "updated 43s ago"
     }
   ],
   "notes": [
