@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-02-28 10:34 Europe/Paris",
+  "lastUpdated": "2026-02-28 10:35 Europe/Paris",
   "model": "openai-codex/gpt-5.3-codex",
-  "context": "192785/272000 (71%)",
+  "context": "192539/272000 (71%)",
   "tokens": {
-    "in": "258187",
-    "out": "1155"
+    "in": "128562",
+    "out": "942"
   },
   "usage": {
-    "sessionLeft": "79215 tokens",
+    "sessionLeft": "79461 tokens",
     "dayLeft": "see OpenClaw session status"
   },
   "tasks": [
@@ -504,19 +504,19 @@
   ],
   "subagents": [
     {
+      "label": "327a1d76-4644-4bc0-8262-c764fc108c05",
+      "status": "recent",
+      "task": "updated 0s ago"
+    },
+    {
       "label": "98b10a2b-026b-4cc8-a9a5-49613efd5d89",
       "status": "recent",
-      "task": "updated 18s ago"
+      "task": "updated 29s ago"
     },
     {
       "label": "d9a99a2b-42a4-45d1-bcf0-e564f7b0dbd6",
       "status": "recent",
-      "task": "updated 39s ago"
-    },
-    {
-      "label": "327a1d76-4644-4bc0-8262-c764fc108c05",
-      "status": "recent",
-      "task": "updated 48s ago"
+      "task": "updated 50s ago"
     }
   ],
   "notes": [
