@@ -346,7 +346,23 @@
       "notes": "Validated operation-dashboard/scripts/check-owner-eta-evidence-lock.mjs returns OWNER_ETA_EVIDENCE_LOCK_OK against lock file and latest evidence meta."
     }
   ],
-  "subagents": [],
+  "subagents": [
+    {
+      "label": "53f1ec46-404c-4b52-af7c-a25ae8e277ba",
+      "status": "recent",
+      "task": "updated 7s ago"
+    },
+    {
+      "label": "a469c01e-d04b-4f0c-8005-603ea704eb34",
+      "status": "recent",
+      "task": "updated 8s ago"
+    },
+    {
+      "label": "7702cab6-8647-4282-bfff-0af647342216",
+      "status": "recent",
+      "task": "updated 13s ago"
+    }
+  ],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
