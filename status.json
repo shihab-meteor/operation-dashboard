@@ -509,23 +509,27 @@
       "priority": "medium",
       "due": "2026-02-28",
       "notes": "heartbeat_guardrail_check.sh now emits ACTION_HINT with exact closure owner fix command when remediation meta freshness fails."
+    },
+    {
+      "id": "t57",
+      "title": "Auto-roll invalid/past ETA during owner-lock refresh",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "high",
+      "due": "2026-02-28",
+      "notes": "refresh-owner-eta-lock.mjs now auto-sets ETA to now+4h when missing/invalid/past, then refresh-blocked-locks-and-verify confirms both locks fresh."
     }
   ],
   "subagents": [
     {
-      "label": "bc11e544-304b-4cd2-b015-f7addaf6aafc",
-      "status": "recent",
-      "task": "updated 5s ago"
-    },
-    {
-      "label": "a3388d10-584f-4ed1-9ba0-0331e69a77fa",
-      "status": "recent",
-      "task": "updated 12s ago"
-    },
-    {
       "label": "45a1e311-5262-45e4-bac0-4500b04bd2f0",
       "status": "recent",
       "task": "updated 12s ago"
+    },
+    {
+      "label": "bc11e544-304b-4cd2-b015-f7addaf6aafc",
+      "status": "recent",
+      "task": "updated 39s ago"
     }
   ],
   "notes": [
