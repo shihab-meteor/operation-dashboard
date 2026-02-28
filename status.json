@@ -447,19 +447,19 @@
   ],
   "subagents": [
     {
+      "label": "95849efc-fc39-4af2-970e-7e698f1ffb82",
+      "status": "recent",
+      "task": "updated 18s ago"
+    },
+    {
       "label": "960a4a36-a8fa-424a-819e-2a7041de00ea",
       "status": "recent",
-      "task": "updated 30s ago"
+      "task": "updated 52s ago"
     },
     {
       "label": "070df556-addd-4275-81b0-0e5c919438eb",
       "status": "recent",
-      "task": "updated 36s ago"
-    },
-    {
-      "label": "95849efc-fc39-4af2-970e-7e698f1ffb82",
-      "status": "recent",
-      "task": "updated 37s ago"
+      "task": "updated 58s ago"
     }
   ],
   "notes": [
