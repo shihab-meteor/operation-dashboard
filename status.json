@@ -464,28 +464,37 @@
       "priority": "low",
       "due": "2026-02-28",
       "notes": "Closed by user decision: web_search key not required for current execution path."
+    },
+    {
+      "id": "t52",
+      "title": "Add one-command blocked-lock refresh+verify runner",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "medium",
+      "due": "2026-02-28",
+      "notes": "Added operation-dashboard/scripts/refresh-blocked-locks-and-verify.mjs to refresh owner+eta and unblock locks then run both freshness checks in one command."
     }
   ],
   "subagents": [
     {
-      "label": "75fa3f82-936d-4b0f-9a40-1e67b99ca91c",
-      "status": "recent",
-      "task": "updated 27s ago"
-    },
-    {
       "label": "4e58468b-9352-4852-86d4-57c32e3e8641",
       "status": "recent",
-      "task": "updated 36s ago"
+      "task": "updated 14s ago"
+    },
+    {
+      "label": "75fa3f82-936d-4b0f-9a40-1e67b99ca91c",
+      "status": "recent",
+      "task": "updated 50s ago"
     },
     {
       "label": "b6ed66ce-b12b-4dd6-8209-d779258d409e",
       "status": "recent",
-      "task": "updated 37s ago"
+      "task": "updated 60s ago"
     },
     {
       "label": "64b975b8-93c4-4157-8418-6073b65a1a24",
       "status": "recent",
-      "task": "updated 1094s ago"
+      "task": "updated 1117s ago"
     }
   ],
   "notes": [
