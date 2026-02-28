@@ -554,18 +554,27 @@
       "priority": "medium",
       "due": "2026-02-28",
       "notes": "Created operation-dashboard/checklists/channel-blocker-closure.md with concrete actions and verification commands for Telegram privacy/groups + WhatsApp link closure."
+    },
+    {
+      "id": "t62",
+      "title": "Add lock-window auto-refresh helper for warning-stage drift",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "medium",
+      "due": "2026-02-28",
+      "notes": "Added operation-dashboard/scripts/check-and-refresh-lock-windows.mjs to auto-refresh owner/unblock locks when warning thresholds are hit, then re-verify freshness."
     }
   ],
   "subagents": [
     {
       "label": "2b23b1d7-5fb6-4393-af95-4904e8068eca",
       "status": "recent",
-      "task": "updated 12s ago"
+      "task": "updated 36s ago"
     },
     {
       "label": "547319bc-bd79-444e-9e6d-e410b948cd65",
       "status": "recent",
-      "task": "updated 21s ago"
+      "task": "updated 44s ago"
     }
   ],
   "notes": [
