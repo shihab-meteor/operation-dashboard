@@ -299,20 +299,18 @@
       "priority": "medium",
       "due": "2026-03-07",
       "notes": "From nightly improvement 2026-02-28: execute 7-14 day validation with defined outreach targets."
-    }
-  ],
-  "subagents": [
-    {
-      "label": "0e9a02dd-3517-44b9-9a4a-0090a9d8c655",
-      "status": "recent",
-      "task": "updated 54s ago"
     },
     {
-      "label": "95828b41-73e9-4f5c-ab25-81eeb5817616",
-      "status": "recent",
-      "task": "updated 54s ago"
+      "id": "t34",
+      "title": "Critical escalation fanout targets in ACTION_REQUIRED output",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "high",
+      "due": "2026-02-28",
+      "notes": "For critical blocked remediation, ACTION_REQUIRED now includes escalation targets list (oncall-engineer, service-owner, security-lead, incident-commander)."
     }
   ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
