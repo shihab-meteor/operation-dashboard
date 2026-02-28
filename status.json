@@ -628,18 +628,7 @@
       "notes": "Created scripts/verify_blocker_closure.sh to run verify-channel-blocker-closure.mjs with 45s timeout when available."
     }
   ],
-  "subagents": [
-    {
-      "label": "d3dadf7c-7ca6-4247-8b50-eb7f263f1943",
-      "status": "recent",
-      "task": "updated 23s ago"
-    },
-    {
-      "label": "af58dc17-981c-4424-90c7-88917c8fc2d1",
-      "status": "recent",
-      "task": "updated 32s ago"
-    }
-  ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
