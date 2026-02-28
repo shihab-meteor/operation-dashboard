@@ -283,13 +283,7 @@
       "notes": "heartbeat_guardrail_check.sh now uses critical=>incident-commander/300s, high=>oncall-lead/900s."
     }
   ],
-  "subagents": [
-    {
-      "label": "dd7358bf-6232-4202-affc-35094456f3be",
-      "status": "recent",
-      "task": "updated 3383s ago"
-    }
-  ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
