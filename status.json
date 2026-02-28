@@ -364,7 +364,23 @@
       "notes": "Added operation-dashboard/locks/p0-risk-waiver.json and enhanced heartbeat_guardrail_check.sh waiver evaluation (dashboard-first with 24h cap) plus WAIVER_STATUS_JSON line."
     }
   ],
-  "subagents": [],
+  "subagents": [
+    {
+      "label": "7e3e3b3e-4a81-40df-b192-e7fefb30a95a",
+      "status": "recent",
+      "task": "updated 10s ago"
+    },
+    {
+      "label": "aa50876b-7417-4aa7-afb7-29140f09094b",
+      "status": "recent",
+      "task": "updated 24s ago"
+    },
+    {
+      "label": "a3dd3007-3b59-4fef-a42f-6dda8f76653f",
+      "status": "recent",
+      "task": "updated 24s ago"
+    }
+  ],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
