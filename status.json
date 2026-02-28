@@ -529,23 +529,7 @@
       "notes": "Added check-closure-owner-line.mjs and integrated fail-fast check into heartbeat_guardrail_check.sh before remediation freshness validation."
     }
   ],
-  "subagents": [
-    {
-      "label": "a9104ab7-6cd7-4c72-87d8-bfd355b07e9c",
-      "status": "recent",
-      "task": "updated 41s ago"
-    },
-    {
-      "label": "0570f905-28dd-46ca-9eb9-e40ae459dc23",
-      "status": "recent",
-      "task": "updated 48s ago"
-    },
-    {
-      "label": "6b1d34e5-ec23-47d3-91d5-1c8275e329c6",
-      "status": "recent",
-      "task": "updated 54s ago"
-    }
-  ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
