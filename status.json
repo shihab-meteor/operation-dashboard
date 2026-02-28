@@ -626,6 +626,15 @@
       "priority": "low",
       "due": "2026-02-28",
       "notes": "Created scripts/verify_blocker_closure.sh to run verify-channel-blocker-closure.mjs with 45s timeout when available."
+    },
+    {
+      "id": "t70",
+      "title": "Add quick blocker verification hint directly in FAIL_BLOCKED action",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "low",
+      "due": "2026-02-28",
+      "notes": "Updated heartbeat_guardrail_check.sh ACTION_HINT to start with scripts/verify_blocker_closure.sh before manual closure steps."
     }
   ],
   "subagents": [],
