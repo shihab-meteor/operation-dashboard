@@ -599,28 +599,27 @@
       "priority": "medium",
       "due": "2026-02-28",
       "notes": "Added operation-dashboard/scripts/verify-channel-blocker-closure.mjs to emit clear pass/fail plus checklist pointer for unresolved Telegram/WhatsApp blockers."
+    },
+    {
+      "id": "t67",
+      "title": "Add session-store remediation checklist artifact",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "medium",
+      "due": "2026-02-28",
+      "notes": "Created operation-dashboard/checklists/session-store-remediation.md with dry-run/apply/recheck flow for missing transcript warnings."
     }
   ],
   "subagents": [
     {
       "label": "70e425ce-5d82-4960-8f40-ecf2dc871708",
       "status": "recent",
-      "task": "updated 5s ago"
+      "task": "updated 38s ago"
     },
     {
       "label": "a9f17af2-60ce-4533-ad7b-fb2ef9824bb5",
       "status": "recent",
-      "task": "updated 17s ago"
-    },
-    {
-      "label": "50a60d9c-1a76-4113-963f-83d97fc369e4",
-      "status": "recent",
-      "task": "updated 27s ago"
-    },
-    {
-      "label": "8b23cb2c-3cce-415f-9a75-f457635ae8fe",
-      "status": "recent",
-      "task": "updated 34s ago"
+      "task": "updated 49s ago"
     }
   ],
   "notes": [
