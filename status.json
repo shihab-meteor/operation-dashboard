@@ -344,23 +344,22 @@
       "priority": "high",
       "due": "2026-02-28",
       "notes": "Validated operation-dashboard/scripts/check-owner-eta-evidence-lock.mjs returns OWNER_ETA_EVIDENCE_LOCK_OK against lock file and latest evidence meta."
+    },
+    {
+      "id": "t39",
+      "title": "Add owner+ETA freshness checker and guardrail integration",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "high",
+      "due": "2026-02-28",
+      "notes": "Added operation-dashboard/scripts/check-owner-eta-freshness.mjs and integrated into scripts/heartbeat_guardrail_check.sh to fail stale or non-time-bound lock ETA."
     }
   ],
   "subagents": [
     {
-      "label": "53f1ec46-404c-4b52-af7c-a25ae8e277ba",
-      "status": "recent",
-      "task": "updated 45s ago"
-    },
-    {
-      "label": "a469c01e-d04b-4f0c-8005-603ea704eb34",
-      "status": "recent",
-      "task": "updated 46s ago"
-    },
-    {
       "label": "7702cab6-8647-4282-bfff-0af647342216",
       "status": "recent",
-      "task": "updated 51s ago"
+      "task": "updated 23s ago"
     }
   ],
   "notes": [
