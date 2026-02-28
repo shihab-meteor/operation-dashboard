@@ -556,13 +556,7 @@
       "notes": "Created operation-dashboard/checklists/channel-blocker-closure.md with concrete actions and verification commands for Telegram privacy/groups + WhatsApp link closure."
     }
   ],
-  "subagents": [
-    {
-      "label": "63e40ecd-5d18-4bf1-97d1-0cdeb353109b",
-      "status": "recent",
-      "task": "updated 23s ago"
-    }
-  ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
