@@ -493,13 +493,7 @@
       "notes": "Updated scripts/channel_remediation_bundle.sh finish to require real '- Owner:' in closure.md and write owner into meta.json before status=done."
     }
   ],
-  "subagents": [
-    {
-      "label": "64b975b8-93c4-4157-8418-6073b65a1a24",
-      "status": "recent",
-      "task": "updated 2938s ago"
-    }
-  ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
