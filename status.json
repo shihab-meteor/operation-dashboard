@@ -1,13 +1,13 @@
 {
   "lastUpdated": "2026-02-28 12:18 Europe/Paris",
   "model": "openai-codex/gpt-5.3-codex",
-  "context": "0/272000 (0%)",
+  "context": "195934/272000 (72%)",
   "tokens": {
-    "in": "73272",
-    "out": "1640"
+    "in": "193374",
+    "out": "261"
   },
   "usage": {
-    "sessionLeft": "n/a",
+    "sessionLeft": "76066 tokens",
     "dayLeft": "see OpenClaw session status"
   },
   "tasks": [
