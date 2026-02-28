@@ -398,23 +398,32 @@
       "priority": "medium",
       "due": "2026-02-28",
       "notes": "Enhanced check-remediation-meta-freshness.mjs to require artifacts.closure path and file existence inside workspace."
+    },
+    {
+      "id": "t45",
+      "title": "Guardrail: mtime coherence check for remediation meta freshness",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "medium",
+      "due": "2026-02-28",
+      "notes": "Enhanced check-remediation-meta-freshness.mjs with drift checks (meta/closure mtime vs finishedAt <=10m) to prevent timestamp spoofing."
     }
   ],
   "subagents": [
     {
       "label": "927b4f2c-4706-4cbb-87a7-1437f9170106",
       "status": "recent",
-      "task": "updated 13s ago"
+      "task": "updated 28s ago"
     },
     {
       "label": "ba4f4245-b155-4149-8a17-e8ad87488ee0",
       "status": "recent",
-      "task": "updated 19s ago"
+      "task": "updated 35s ago"
     },
     {
       "label": "b2f4ee2c-44b0-4ec6-9c26-58b63887b6de",
       "status": "recent",
-      "task": "updated 20s ago"
+      "task": "updated 35s ago"
     }
   ],
   "notes": [
