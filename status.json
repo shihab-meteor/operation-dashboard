@@ -443,28 +443,37 @@
       "priority": "medium",
       "due": "2026-02-28",
       "notes": "Added operation-dashboard/scripts/refresh-owner-eta-lock.mjs and validated fresh timestamp via check-owner-eta-freshness.mjs."
+    },
+    {
+      "id": "t50",
+      "title": "Add unblock-action lock timestamp refresher utility",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "medium",
+      "due": "2026-02-28",
+      "notes": "Added operation-dashboard/scripts/refresh-unblock-action-lock.mjs and validated with check-unblock-action-lock-freshness.mjs."
     }
   ],
   "subagents": [
     {
-      "label": "ac68307e-a120-4309-867b-7ca228babbff",
+      "label": "13240a1c-e663-45fc-924d-75a0b98b65ad",
       "status": "recent",
-      "task": "updated 1s ago"
+      "task": "updated 6s ago"
     },
     {
       "label": "dcfa4df0-8c8b-410f-bfa6-3cf2e17928f7",
       "status": "recent",
-      "task": "updated 1s ago"
+      "task": "updated 21s ago"
     },
     {
-      "label": "13240a1c-e663-45fc-924d-75a0b98b65ad",
+      "label": "ac68307e-a120-4309-867b-7ca228babbff",
       "status": "recent",
-      "task": "updated 1s ago"
+      "task": "updated 21s ago"
     },
     {
       "label": "070df556-addd-4275-81b0-0e5c919438eb",
       "status": "recent",
-      "task": "updated 19s ago"
+      "task": "updated 45s ago"
     }
   ],
   "notes": [
