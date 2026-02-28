@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-28 10:30 Europe/Paris",
+  "lastUpdated": "2026-02-28 10:34 Europe/Paris",
   "model": "openai-codex/gpt-5.3-codex",
   "context": "192785/272000 (71%)",
   "tokens": {
@@ -493,7 +493,23 @@
       "notes": "Updated scripts/channel_remediation_bundle.sh finish to require real '- Owner:' in closure.md and write owner into meta.json before status=done."
     }
   ],
-  "subagents": [],
+  "subagents": [
+    {
+      "label": "d9a99a2b-42a4-45d1-bcf0-e564f7b0dbd6",
+      "status": "recent",
+      "task": "updated 10s ago"
+    },
+    {
+      "label": "98b10a2b-026b-4cc8-a9a5-49613efd5d89",
+      "status": "recent",
+      "task": "updated 19s ago"
+    },
+    {
+      "label": "327a1d76-4644-4bc0-8262-c764fc108c05",
+      "status": "recent",
+      "task": "updated 19s ago"
+    }
+  ],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
