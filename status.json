@@ -502,23 +502,7 @@
       "notes": "Added check-unblock-lock-expiry-window.mjs and integrated WARN before hard unblock lock freshness failure window."
     }
   ],
-  "subagents": [
-    {
-      "label": "327a1d76-4644-4bc0-8262-c764fc108c05",
-      "status": "recent",
-      "task": "updated 0s ago"
-    },
-    {
-      "label": "98b10a2b-026b-4cc8-a9a5-49613efd5d89",
-      "status": "recent",
-      "task": "updated 29s ago"
-    },
-    {
-      "label": "d9a99a2b-42a4-45d1-bcf0-e564f7b0dbd6",
-      "status": "recent",
-      "task": "updated 50s ago"
-    }
-  ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
