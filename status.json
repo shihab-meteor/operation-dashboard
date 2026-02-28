@@ -619,23 +619,7 @@
       "notes": "Added quick verifier section to operation-dashboard/checklists/channel-blocker-closure.md using verify-channel-blocker-closure.mjs and explicit success criteria."
     }
   ],
-  "subagents": [
-    {
-      "label": "0ba57dc5-f351-4ca5-a73d-4df55e4546ee",
-      "status": "recent",
-      "task": "updated 35s ago"
-    },
-    {
-      "label": "ae060772-3929-4f7d-8361-4c25f1927435",
-      "status": "recent",
-      "task": "updated 46s ago"
-    },
-    {
-      "label": "d38426f1-501b-4bb0-8d6e-3d9aeffd1242",
-      "status": "recent",
-      "task": "updated 46s ago"
-    }
-  ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
