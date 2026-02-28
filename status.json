@@ -308,6 +308,15 @@
       "priority": "high",
       "due": "2026-02-28",
       "notes": "For critical blocked remediation, ACTION_REQUIRED now includes escalation targets list (oncall-engineer, service-owner, security-lead, incident-commander)."
+    },
+    {
+      "id": "t35",
+      "title": "Session-store machine-readable status payload in guardrail output",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "high",
+      "due": "2026-02-28",
+      "notes": "heartbeat_guardrail_check.sh emits SESSION_STORE_STATUS_JSON with code/store/count/repair_cmd for actionable automation."
     }
   ],
   "subagents": [],
