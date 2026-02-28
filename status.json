@@ -328,7 +328,23 @@
       "notes": "Heartbeat 04:24: added strict preflight gate in HEARTBEAT.md and opened explicit ownership-lock task to close recurring FAIL_BLOCKED loop."
     }
   ],
-  "subagents": [],
+  "subagents": [
+    {
+      "label": "ed66520d-4094-434f-9e96-f5ef3cd046e7",
+      "status": "recent",
+      "task": "updated 27s ago"
+    },
+    {
+      "label": "67c9ad2d-6b7d-464a-ac63-b1c7af504798",
+      "status": "recent",
+      "task": "updated 33s ago"
+    },
+    {
+      "label": "4f0daa28-c801-4557-b955-63eac76d1609",
+      "status": "recent",
+      "task": "updated 33s ago"
+    }
+  ],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
