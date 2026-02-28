@@ -536,18 +536,27 @@
       "priority": "medium",
       "due": "2026-02-28",
       "notes": "Added operation-dashboard/scripts/set-latest-closure-owner.mjs and used it to set closure owner before finish."
+    },
+    {
+      "id": "t60",
+      "title": "Add explicit blocker-closure command hint on FAIL_BLOCKED breach",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "medium",
+      "due": "2026-02-28",
+      "notes": "heartbeat_guardrail_check.sh now prints ACTION_HINT checklist for Telegram privacy/groups and WhatsApp linking before rerun."
     }
   ],
   "subagents": [
     {
       "label": "37bd07ee-46b7-4a6d-8f6a-49c16ffad72f",
       "status": "recent",
-      "task": "updated 10s ago"
+      "task": "updated 36s ago"
     },
     {
       "label": "5b0a84cc-c3e3-4aa6-a60d-2df4acdb0c94",
       "status": "recent",
-      "task": "updated 10s ago"
+      "task": "updated 49s ago"
     }
   ],
   "notes": [
