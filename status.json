@@ -473,28 +473,32 @@
       "priority": "medium",
       "due": "2026-02-28",
       "notes": "Added operation-dashboard/scripts/refresh-blocked-locks-and-verify.mjs to refresh owner+eta and unblock locks then run both freshness checks in one command."
+    },
+    {
+      "id": "t53",
+      "title": "Add remediation meta pre-expiry warning sentinel",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "medium",
+      "due": "2026-02-28",
+      "notes": "Added check-remediation-meta-expiry-window.mjs and integrated guardrail WARN before hard freshness failure window."
     }
   ],
   "subagents": [
     {
-      "label": "449843e0-a6dd-4885-957e-450c78ee7123",
-      "status": "recent",
-      "task": "updated 18s ago"
-    },
-    {
       "label": "87f8496a-c979-4146-b116-6142ac33ee2f",
       "status": "recent",
-      "task": "updated 24s ago"
+      "task": "updated 26s ago"
     },
     {
-      "label": "bf5a8b67-2082-4c37-a7cf-754726bf0f99",
+      "label": "449843e0-a6dd-4885-957e-450c78ee7123",
       "status": "recent",
-      "task": "updated 24s ago"
+      "task": "updated 45s ago"
     },
     {
       "label": "64b975b8-93c4-4157-8418-6073b65a1a24",
       "status": "recent",
-      "task": "updated 1322s ago"
+      "task": "updated 1349s ago"
     }
   ],
   "notes": [
