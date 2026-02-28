@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-02-28 08:59 Europe/Paris",
+  "lastUpdated": "2026-02-28 09:00 Europe/Paris",
   "model": "openai-codex/gpt-5.3-codex",
-  "context": "194982/272000 (72%)",
+  "context": "194181/272000 (71%)",
   "tokens": {
-    "in": "66294",
-    "out": "1435"
+    "in": "69316",
+    "out": "701"
   },
   "usage": {
-    "sessionLeft": "77018 tokens",
+    "sessionLeft": "77819 tokens",
     "dayLeft": "see OpenClaw session status"
   },
   "tasks": [
@@ -466,7 +466,13 @@
       "notes": "Closed by user decision: web_search key not required for current execution path."
     }
   ],
-  "subagents": [],
+  "subagents": [
+    {
+      "label": "64b975b8-93c4-4157-8418-6073b65a1a24",
+      "status": "recent",
+      "task": "updated 24s ago"
+    }
+  ],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
