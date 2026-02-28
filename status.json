@@ -520,7 +520,23 @@
       "notes": "refresh-owner-eta-lock.mjs now auto-sets ETA to now+4h when missing/invalid/past, then refresh-blocked-locks-and-verify confirms both locks fresh."
     }
   ],
-  "subagents": [],
+  "subagents": [
+    {
+      "label": "d6fad6ac-fcc4-455a-8d5e-a99464763673",
+      "status": "recent",
+      "task": "updated 12s ago"
+    },
+    {
+      "label": "35d9f4cc-5cfe-41c2-ae2c-b2e0f662a3f0",
+      "status": "recent",
+      "task": "updated 15s ago"
+    },
+    {
+      "label": "2bc03076-63cb-43a3-8b79-35fe95654464",
+      "status": "recent",
+      "task": "updated 21s ago"
+    }
+  ],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
