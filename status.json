@@ -574,7 +574,23 @@
       "notes": "Added operation-dashboard/scripts/check-channel-blockers.mjs to output CHANNEL_BLOCKERS_PRESENT/CLEAR for Telegram privacy/groups and WhatsApp link blockers."
     }
   ],
-  "subagents": [],
+  "subagents": [
+    {
+      "label": "fb1c2351-8e23-4aaa-8e8a-7986b1a0f6f6",
+      "status": "recent",
+      "task": "updated 0s ago"
+    },
+    {
+      "label": "4196ffee-7318-4568-9336-50630f3ae1a2",
+      "status": "recent",
+      "task": "updated 10s ago"
+    },
+    {
+      "label": "4895d39e-ea19-44bc-baaa-7b0c4ac62c7b",
+      "status": "recent",
+      "task": "updated 11s ago"
+    }
+  ],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
