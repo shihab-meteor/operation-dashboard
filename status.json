@@ -563,9 +563,24 @@
       "priority": "medium",
       "due": "2026-02-28",
       "notes": "Added operation-dashboard/scripts/check-and-refresh-lock-windows.mjs to auto-refresh owner/unblock locks when warning thresholds are hit, then re-verify freshness."
+    },
+    {
+      "id": "t63",
+      "title": "Add machine-check for channel blocker closure state",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "medium",
+      "due": "2026-02-28",
+      "notes": "Added operation-dashboard/scripts/check-channel-blockers.mjs to output CHANNEL_BLOCKERS_PRESENT/CLEAR for Telegram privacy/groups and WhatsApp link blockers."
     }
   ],
-  "subagents": [],
+  "subagents": [
+    {
+      "label": "a4be5e05-bdeb-4269-ad61-50bbf0fb5b94",
+      "status": "recent",
+      "task": "updated 25s ago"
+    }
+  ],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
