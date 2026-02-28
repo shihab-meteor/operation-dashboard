@@ -425,6 +425,15 @@
       "priority": "medium",
       "due": "2026-02-28",
       "notes": "check-remediation-meta-freshness.mjs now requires valid startedAt, finishedAt>=startedAt, and duration<=24h."
+    },
+    {
+      "id": "t48",
+      "title": "Guardrail: dependency preflight gate for required executables",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "medium",
+      "due": "2026-02-28",
+      "notes": "Added dependency preflight in heartbeat_guardrail_check.sh for openclaw/node/python3 (+ timeout warning) to fail fast on missing tooling."
     }
   ],
   "subagents": [],
