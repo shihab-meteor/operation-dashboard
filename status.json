@@ -610,18 +610,7 @@
       "notes": "Created operation-dashboard/checklists/session-store-remediation.md with dry-run/apply/recheck flow for missing transcript warnings."
     }
   ],
-  "subagents": [
-    {
-      "label": "70e425ce-5d82-4960-8f40-ecf2dc871708",
-      "status": "recent",
-      "task": "updated 43s ago"
-    },
-    {
-      "label": "a9f17af2-60ce-4533-ad7b-fb2ef9824bb5",
-      "status": "recent",
-      "task": "updated 54s ago"
-    }
-  ],
+  "subagents": [],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
