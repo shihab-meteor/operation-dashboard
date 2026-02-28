@@ -545,9 +545,29 @@
       "priority": "medium",
       "due": "2026-02-28",
       "notes": "heartbeat_guardrail_check.sh now prints ACTION_HINT checklist for Telegram privacy/groups and WhatsApp linking before rerun."
+    },
+    {
+      "id": "t61",
+      "title": "Add channel blocker closure checklist artifact",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "medium",
+      "due": "2026-02-28",
+      "notes": "Created operation-dashboard/checklists/channel-blocker-closure.md with concrete actions and verification commands for Telegram privacy/groups + WhatsApp link closure."
     }
   ],
-  "subagents": [],
+  "subagents": [
+    {
+      "label": "63e40ecd-5d18-4bf1-97d1-0cdeb353109b",
+      "status": "recent",
+      "task": "updated 9s ago"
+    },
+    {
+      "label": "b7a5d6e9-6668-40ba-8fa6-6ba157229d8c",
+      "status": "recent",
+      "task": "updated 18s ago"
+    }
+  ],
   "notes": [
     "State auto-synced from OpenClaw CLI runtime.",
     "Auto-refresh polls status every 15 seconds.",
