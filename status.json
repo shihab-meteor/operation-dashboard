@@ -335,18 +335,27 @@
       "priority": "high",
       "due": "2026-02-28",
       "notes": "Added operation-dashboard/p0-blocked-incident-lock.json to enforce closure metadata before PASS recovery."
+    },
+    {
+      "id": "t38",
+      "title": "Add owner/ETA/evidence lock validator command for t36",
+      "owner": "Main assistant",
+      "status": "done",
+      "priority": "high",
+      "due": "2026-02-28",
+      "notes": "Validated operation-dashboard/scripts/check-owner-eta-evidence-lock.mjs returns OWNER_ETA_EVIDENCE_LOCK_OK against lock file and latest evidence meta."
     }
   ],
   "subagents": [
     {
-      "label": "4f0daa28-c801-4557-b955-63eac76d1609",
-      "status": "recent",
-      "task": "updated 31s ago"
-    },
-    {
       "label": "67c9ad2d-6b7d-464a-ac63-b1c7af504798",
       "status": "recent",
-      "task": "updated 73s ago"
+      "task": "updated 25s ago"
+    },
+    {
+      "label": "4f0daa28-c801-4557-b955-63eac76d1609",
+      "status": "recent",
+      "task": "updated 59s ago"
     }
   ],
   "notes": [
